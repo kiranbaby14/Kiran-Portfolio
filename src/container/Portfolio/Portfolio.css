@@ -1,0 +1,26 @@
+#portfolio {
+    background-color: var(--body-color);
+}
+
+.button_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    /* margin-top: 4rem; */
+}
+
+.button_wrapper > button {
+    height: 2rem;
+    padding: 0 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 10%;
+}
+
+.button_wrapper > button.active {
+    background-color: var(--first-color);
+    color: white;
+}
+
+.image_container{}

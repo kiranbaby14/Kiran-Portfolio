@@ -1,18 +1,18 @@
 {
-  "name": "new",
+  "name": "kiran-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.11.2",
     "@mui/styled-engine-sc": "^5.11.0",
     "framer-motion": "^6.2.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.6.1",
+    "react-scripts": "5.0.1",
     "react-typewriter-effect": "^1.1.0",
     "styled-components": "^5.3.6",
     "swiper": "^8.0.0",
@@ -41,5 +41,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "envify": "^4.1.0",
+    "terser": "^5.16.1",
+    "terser-brunch": "^4.1.0",
+    "uglifyify": "^5.0.2"
   }
 }

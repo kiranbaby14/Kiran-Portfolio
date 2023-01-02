@@ -126,23 +126,29 @@ const Skills = () => {
                                 >
                                     <Paper elevation={3} style={{ backgroundColor: 'var(--input-color)', width: "100%" }}>
                                         <div className="app_skills-item app_flex">
-                                            <div className="">
+                                            <div className="app_skills-item ">
                                                 <img src={skill.icon} alt={skill.name} />
+                                                <p>dcb</p>
                                             </div>
-                                            <div className="">
+                                            <div className="app_skills-item">
                                                 <img src={skill.icon} alt={skill.name} />
+                                                <p>dcb</p>
                                             </div>
-                                            <div className="">
+                                            <div className="app_skills-item">
                                                 <img src={skill.icon} alt={skill.name} />
+                                                <p>dcb</p>
                                             </div>
-                                            <div className="">
+                                            <div className="app_skills-item">
                                                 <img src={skill.icon} alt={skill.name} />
+                                                <p>dcb</p>
                                             </div>
-                                            <div className="">
+                                            <div className="app_skills-item">
                                                 <img src={skill.icon} alt={skill.name} />
+                                                <p>dcb</p>
                                             </div>
-                                            <div className="">
+                                            <div className="app_skills-item">
                                                 <img src={skill.icon} alt={skill.name} />
+                                                <p>dcb</p>
                                             </div>
                                         </div>
                                     </Paper>

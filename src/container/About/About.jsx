@@ -45,16 +45,16 @@ const About = () => {
                                     className="mySwiper"
                                 >
                                     <SwiperSlide>
-                                        <img src={images.webdeveloper} style={{ width: "100%", height: "300px", objectFit: 'cover' }} />
+                                        <img src={images.webdeveloper} style={{ width: "100%", height: "300px", objectFit: 'cover' }} alt='img1'/>
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <img src={images.webdeveloper} style={{ width: "100%", height: "300px", objectFit: 'cover' }} />
+                                        <img src={images.webdeveloper} style={{ width: "100%", height: "300px", objectFit: 'cover' }} alt='img1'/>
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <img src={images.webdeveloper} style={{ width: "100%", height: "300px", objectFit: 'cover' }} />
+                                        <img src={images.webdeveloper} style={{ width: "100%", height: "300px", objectFit: 'cover' }} alt='img1'/>
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt='img1'/>
                                     </SwiperSlide>
                                 </Swiper>
                             </p>

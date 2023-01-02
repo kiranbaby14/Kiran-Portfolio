@@ -2,7 +2,7 @@
     background-color: var(--body-color);
 }
 
-.button_wrapper{
+.button_wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -10,7 +10,7 @@
     /* margin-top: 4rem; */
 }
 
-.button_wrapper > button {
+.button_wrapper>button {
     height: 2rem;
     padding: 0 1rem;
     cursor: pointer;
@@ -18,9 +18,36 @@
     border-radius: 10%;
 }
 
-.button_wrapper > button.active {
+.button_wrapper>button.active {
     background-color: var(--first-color);
     color: white;
 }
 
-.image_container{}
+.image_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.image_container > .image_card {
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    height: 15rem;
+}
+
+.image_card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image_card p {
+    position: absolute;
+    bottom: 0;
+    /* color: black; */
+    left: 1rem;
+    font-size: 1rem;
+    text-shadow: 2px 2px black;
+}

@@ -1,8 +1,8 @@
 const JavaScript = () => {
   /*==================== MENU SHOW Y HIDDEN ====================*/
-  const navMenu = document.getElementById('nav-menu');
-  const navToggle = document.getElementById('nav-toggle');
-  const navClose = document.getElementById('nav-close');
+  // const navMenu = document.getElementById('nav-menu');
+  // const navToggle = document.getElementById('nav-toggle');
+  // const navClose = document.getElementById('nav-close');
 
   // /*===== MENU SHOW =====*/
   // /* Validate if constant exists */
@@ -84,13 +84,12 @@ const JavaScript = () => {
       const sectionTop = current.offsetTop - 200;
       let sectionId = current.getAttribute('id')
 
-      if(sectionId !== "qualification") {
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-          document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link')
-        } else {
-          document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active-link')
-        }
+      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+        document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link')
+      } else {
+        document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active-link')
       }
+
     })
   }
   window.addEventListener('scroll', scrollActive)

@@ -162,7 +162,7 @@
     .nav_list {
         display: flex;
         column-gap: 3rem;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(6, 0.75fr);
     }
 
     .nav_menu {

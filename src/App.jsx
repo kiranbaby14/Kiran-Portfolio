@@ -14,11 +14,19 @@ const App = () => {
     JavaScript();
   }, [])
 
-  const [theme, setTheme] = useState("light-theme");
-  const [themeIcon, setThemeIcon] = useState("uil uil-sun change-theme");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light-theme");
+  const [themeIcon, setThemeIcon] = useState(localStorage.getItem("icon") ? localStorage.getItem("icon"): "uil uil-sun change-theme");
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+    localStorage.setItem("icon", themeIcon);
+  }, [theme, themeIcon])
+
+
 
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light-theme" ? "dark-theme" : "light-theme"));
+
     setThemeIcon((curr) => (curr === "uil uil-sun change-theme" ?
       "uil uil-moon change-theme" : "uil uil-sun change-theme"))
   }

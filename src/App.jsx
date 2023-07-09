@@ -12,6 +12,7 @@ const App = () => {
 
   useEffect(() => {
     JavaScript();
+    window.scrollTo({ top: 0, behavior: 'instant' });
   }, [])
 
   const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light-theme");

@@ -5,12 +5,12 @@ const Footer = () => {
     return (
         <>
             {/* <!--==================== FOOTER ====================--> */}
-            <footer className="footer" >
+            <footer className="footer smooth_transition" >
                 <div className="footer_bg">
                     <div className="footer_container container grid">
                         <div>
                             <h1 className="footer_title">Kiran Baby</h1>
-                            <span className="footer_subtitle">MERN stack developer</span>
+                            {/* <span className="footer_subtitle">MERN stack developer</span> */}
                         </div>
 
                         <ul className="footer_links">
@@ -18,7 +18,7 @@ const Footer = () => {
                                 <a href="#portfolio" className="footer_link">Portfolio</a>
                             </li>
                             <li>
-                                <a href="#contact" className="footer_link">Contact</a>
+                                <a href="#skills" className="footer_link">Skills</a>
                             </li>
                             <li>
                                 <a href="#about" className="footer_link">About</a>
@@ -36,7 +36,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <p className="footer_copy">&#169 Kiran Baby. All rights reserved</p>
+                    <p className="footer_copy">&#0169; Kiran Baby</p>
                 </div>
 
             </footer>

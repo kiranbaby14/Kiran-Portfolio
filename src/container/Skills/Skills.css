@@ -30,7 +30,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px    ;
+    margin: 10px;
 
 }
 
@@ -44,7 +44,7 @@
     height: 50%;
 }
 
-.app_skills-item>p{
+.app_skills-item>p {
     font-size: 13px;
     font-weight: 500;
     margin-top: 0.5rem;
@@ -81,13 +81,23 @@
     padding-top: 50px;
     padding-bottom: 50px;
   } */
-  .swiper {
+.swiper {
     height: max-content;
-  }
-  .swiper-slide{
-    width: 300px;
-  }
+}
 
-  .swiper_container {
+.swiper-slide {
+    width: 300px;
+}
+
+.swiper_container {
     width: 100% !important;
-  }
+}
+
+#skills .swiper-pagination-bullet {
+    background-color: rgb(0, 0, 0) !important;
+}
+
+#skills .swiper-pagination-bullet-active {
+    background-color: rgb(5, 252, 79) !important;
+}
+

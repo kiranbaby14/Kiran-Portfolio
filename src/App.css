@@ -55,21 +55,6 @@
     --z-modal: 1000;
 }
 
-/* Font size for large devices */
-/* @media screen and (min-width: 968px) */
-@media screen and (min-width: 968px) {
-    :root {
-        --big-font-size: 3rem;
-        --h1-font-size: 2.25rem;
-        --h2-font-size: 1.5rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
-        --small-font-size: .875rem;
-        --smaller-font-size: .813rem;
-    }
-}
-
-
 /*======== Variables Dark theme ========*/
 .dark-theme {
     --first-color-second: hsl(var(--hue-color), 30%, 8%);
@@ -113,10 +98,9 @@ a {
     text-decoration: none;
 }
 
-/* img {
-    width: 100%;
-    height: auto;
-} */
+.smooth_transition {
+    transition: all 0.3s ease-in-out;
+}
 
 /*======== REUSABLE CSS CLASSES ========*/
 .section {
@@ -239,9 +223,6 @@ a {
 
 /* For medium devices */
 @media screen and (min-width: 568px) {
-
-    .about_container,
-    .skills_container,
     .contact_container,
     .footer_container {
         grid-template-columns: repeat(2, 1fr);
@@ -260,7 +241,6 @@ a {
     .container {
         margin-left: auto;
         margin-right: auto;
-
     }
 
     body {
@@ -281,10 +261,6 @@ a {
 
     .about_container {
         column-gap: 5rem;
-    }
-
-    .about_img {
-        width: 350px;
     }
 
     .about_description {
@@ -312,7 +288,10 @@ a {
     }
 
     .footer_container {
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .footer_bg {
@@ -334,9 +313,17 @@ a {
     
 }
 
-/* For large devices */
-/* @media screen and (min-width: 1024px) */
-@media screen and (min-width: 1215px) {
-
+/* Font size for large devices */
+/* @media screen and (min-width: 968px) */
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
 }
 

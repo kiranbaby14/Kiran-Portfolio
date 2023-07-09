@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { ThemeContext } from "../../App";
-import './Header.css'
+import './Header.css';
 
 const Header = () => {
     const { theme, themeIcon, toggleTheme } = useContext(ThemeContext)
@@ -69,7 +69,7 @@ const Header = () => {
                             checked={theme === "dark-theme"}>
                         </i>
                         <div className="nav_toggle" id="nav-toggle" onClick={navMenuBtnToggleHandler}>
-                            <i className="uil uil-apps" ></i>
+                            <i className="uil uil-apps " ></i>
                         </div>
                     </div>
                 </nav>

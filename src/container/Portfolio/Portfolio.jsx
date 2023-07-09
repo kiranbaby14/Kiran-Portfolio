@@ -32,7 +32,7 @@ const Portfolio = () => {
     return (
         <>
             {/* <!--==================== PORTFOLIO ====================--> */}
-            <section className="portfolio section" id="portfolio">
+            <section className="portfolio section smooth_transition" id="portfolio">
                 <h2 className="section_title">Portfolio</h2>
                 <span className="section_subtitle">my personal projects</span>
                 <div className="container">

@@ -1,11 +1,13 @@
 
 import React from "react";
-import ReactDOM from "react-dom";
-
+import ReactDOM from "react-dom/client";
 // eslint-disable-next-line
 import "swiper/css/bundle";
 
-import App from "./App.jsx";
+import App from "./App";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+    <App />
+);
     

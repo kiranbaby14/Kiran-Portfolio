@@ -5,39 +5,41 @@ const Contact = () => {
     return (
         <>
             {/* <!--==================== CONTACT ME ====================--> */}
-            <section className="contact section" id="contact">
+            <section className="contact section smooth_transition" id="contact">
                 <h2 className="section_title">Contact Me</h2>
                 <span className="section_subtitle">Get in touch</span>
 
                 <div className="contact_container container grid">
-                    <div>
-                        <div className="contact_information">
-                            <i className="uil uil-phone contact_icon"></i>
+                    <div className='contact_information_container'>
+                        <div>
+                            {/* <div className="contact_information">
+                                <i className="uil uil-phone contact_icon"></i>
 
-                            <div>
-                                <h3 className="contact_title">Call Me</h3>
-                                <span className="contact_subtitle">+91 7567897694</span>
+                                <div>
+                                    <h3 className="contact_title">Call Me</h3>
+                                    <span className="contact_subtitle">+91 7567897694</span>
+                                </div>
+                            </div> */}
+
+
+                            <div className="contact_information">
+                                <i className="uil uil-envelope contact_icon"></i>
+                                <div>
+                                    <h3 className="contact_title">Email Me</h3>
+                                    <span className="contact_subtitle">kiranbaby256@gmail.com</span>
+                                </div>
+                            </div>
+
+                            <div className="contact_information">
+                                <i className="uil uil-location-point contact_icon"></i>
+
+                                <div>
+                                    <h3 className="contacct_title">Location</h3>
+                                    <span className="contact_subtitle">United Kingdom</span>
+                                </div>
                             </div>
                         </div>
 
-
-                        <div className="contact_information">
-                            <i className="uil uil-envelope contact_icon"></i>
-
-                            <div>
-                                <h3 className="contact_title">Email Me</h3>
-                                <span className="contact_subtitle">kiranbaby256@gmail.com</span>
-                            </div>
-                        </div>
-
-                        <div className="contact_information">
-                            <i className="uil uil-location-point contact_icon"></i>
-
-                            <div>
-                                <h3 className="contacct_title">Location</h3>
-                                <span className="contact_subtitle">India, Kerala</span>
-                            </div>
-                        </div>
                     </div>
 
 

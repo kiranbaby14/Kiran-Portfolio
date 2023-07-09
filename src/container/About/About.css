@@ -2,41 +2,70 @@
     background-color: var(--body-color);
 }
 
-.about_img{
-    width: 300px;
-    border-radius: .5rem;
+.about_img {
+    background: url("../../assets/images/kiran.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     justify-self: center;
-    align-self: center;
+    width: 300px;
+    height: 300px;
+    background-color: var(--first-color);
+    animation: profile_animate 8s ease-in-out infinite 1s;
 }
 
-.about_description{
-    text-align: center;
+@keyframes profile_animate {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+.about_right {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* background-color: yellow; */
+    align-items: center;
+}
+
+.about_data {
+    /* text-align: center; */
     margin-bottom: var(--mb-2-5);
 }
 
-.about_info{
+.about_info {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: var(--mb-2-5);
 }
 
-.about_info-title{
+.about_info-title {
     font-size: var(--h2-font-size);
     font-weight: var(--font-semi-bold);
     color: var(--title-color);
 }
 
-.about_info-name{
+.about_info-name {
     font-size: var(--smaller-font-size);
 }
 
 .about_info-title,
-.about_info-name{
+.about_info-name {
     display: block;
     text-align: center;
 }
 
-.about_buttons{
+.about_buttons {
     display: flex;
     justify-content: center;
 }
@@ -45,15 +74,64 @@
 .swiper {
     width: 300px;
     height: 300px;
-  }
-  
-  .swiper-slide {
+}
+
+.swiper-slide {
     background-position: center;
     background-size: cover;
-  }
-  
-  .swiper-slide img {
+}
+
+#about .swiper-pagination-bullet-active,
+ #about .swiper-pagination-bullet  {
+    background-color: #ffffff !important;
+}
+
+.swiper-slide img {
     display: block;
     width: 100%;
-  }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* backdrop-filter: blur(2.5px);   */
+}
+
+.swiper_slide_text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper_slide_text h1, .swiper_slide_text p {
+    color: white;
+    padding: 10px;
+}
+
 /* ----------------------- */
+
+@media screen and (max-width: 376px) {
+    .about_img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 660px) {
+
+    .about_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

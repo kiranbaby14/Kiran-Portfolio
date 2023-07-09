@@ -6,6 +6,13 @@
     row-gap: 3rem;
 }
 
+.contact_information_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
 .contact_information{
     display: flex;
     margin-bottom: var(--mb-2);

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { images } from "../../constants";
 import "./Skills.css";
 
@@ -13,67 +13,34 @@ import { Box, Paper } from '@mui/material';
 
 const Skills = () => {
 
-    // var mySwiper = new Swiper('.swiper-container', {
-    //     loop: true,
-    //     speed: 1000,
-    //     autoplay: {
-    //         delay: 3000,
-    //     },
-    //     effect: 'coverflow',
-    //     grabCursor: true,
-    //     centeredSlides: true,
-    //     slidesPerView: 'auto',
-    //     coverflowEffect: {
-    //         rotate: 0,
-    //         stretch: 80,
-    //         depth: 200,
-    //         modifier: 1,
-    //         slideShadows: false,
-    //     },
+    const [skillName, setSkillName] = useState('');
 
-    //     // Navigation arrows
-    //     navigation: {
-    //         nextEl: '.swiper-button-next',
-    //         prevEl: '.swiper-button-prev',
-    //     },
+    const skills = {
+        "ML/DL": [{ name: "PyTorch", icon: images.node }, { name: "Tensorflow", icon: images.node }, { name: "Numpy", icon: images.node }, { name: "Pandas", icon: images.node }],
+        "Frontend": [{ name: "HTML", icon: images.html }, { name: "CSS", icon: images.css }, { name: "JavaScript", icon: images.javascript }, { name: "React", icon: images.react }, { name: "Redux", icon: images.redux }],
+        "BackEnd": [{ name: "Django", icon: images.node }, { name: "Node", icon: images.node }, { name: "MongoDB", icon: images.node }, { name: "Express", icon: images.node }],
+        "Programming Languages": [{ name: "Python", icon: images.python }, { name: "Java", icon: images.node }, { name: "JavaScript", icon: images.javascript }, { name: "Solidity", icon: images.node }, { name: "C#", icon: images.node }],
+        "Tools": [{ name: "Git", icon: images.git }, { name: "GitHub", icon: images.git }, { name: "Docker", icon: images.node }],
+        "Softwares": [{ name: "Unity", icon: images.node }, { name: "AndroidStudio", icon: images.node }]
 
-    // })
+    };
 
-    const skills = [{ name: "HTML", icon: images.html }, { name: "CSS", icon: images.css },
-    { name: "JavaScript", icon: images.javascript }, { name: "React", icon: images.react },
-    { name: "Node", icon: images.node }, { name: "MongoDB", icon: images.node }, { name: "Express", icon: images.node }, { name: "Django", icon: images.node },
-    { name: "Python", icon: images.python }, { name: "Unity", icon: images.node }, { name: "C#", icon: images.node }, { name: "Git", icon: images.git },
-    { name: "Docker", icon: images.node }, { name: "FramerMotion", icon: images.node }, { name: "AndroidStudio", icon: images.node }, { name: "Java", icon: images.node },
-    { name: "Tensorflow", icon: images.node }, { name: "Numpy", icon: images.node }, { name: "Pandas", icon: images.node }, { name: "Solidity", icon: images.node }];
+    const handleSlideChange = (swiper) => {
+        const { activeIndex } = swiper;
+        const skillNames = Object.keys(skills);
+        const adjustedIndex = activeIndex % skillNames.length;
+        const activeSkill = skillNames[adjustedIndex];
+        setSkillName(activeSkill);
+      };
 
     return (
         <>
             {/* <!--==================== SKILLS ====================--> */}
-            <section className="skills section" id="skills">
+            <section className="skills section smooth_transition" id="skills">
                 <h2 className="section_title">Skills</h2>
-                <span className="section_subtitle">my Technical Knowledge</span>
+                <span className="section_subtitle">{skillName}</span>
 
                 <div className="app_skills-container container">
-                    {/* <motion.div className="app_skills-list">
-                        {skills.map((skill) => (
-                            <motion.div
-                                initial={{ opacity: 0, scale: 0 }}
-                                whileInView={{ opacity: [0, 1], scale: [0, 1] }}
-                                transition={{ duration: 0.20 }}
-                                viewport={{ once: true }}
-                                className="app_skills-item app_flex"
-                                key={skill.name}
-                            >
-                                <div className="app_flex">
-                                    <img src={skill.icon} alt={skill.name} />
-                                </div>
-                                <p className='p-text'>{skill.name}</p>
-
-                            </motion.div>
-                        ))}
-                    </motion.div> */}
-
-
 
                     {/* <!-- Slider main container --> */}
 
@@ -97,19 +64,15 @@ const Skills = () => {
                             slideShadows: true,
                         }}
 
-                        // Navigation arrows
-                        // navigation={{
-                        //     nextEl: '.swiper-button-next',
-                        //     prevEl: '.swiper-button-prev',
-                        // }}
                         pagination={true}
-                        // modules={[EffectCoverflow, Pagination, Navigation]}
                         modules={[EffectCoverflow, Pagination, Navigation]}
                         className="swiper_container"
+                        onSlideChange={handleSlideChange}
                     >
                         {/* <!-- Slides --> */}
 
-                        {skills.map((skill, id) => (
+                        {Object.entries(skills).map(([name, skills], id) => (
+
                             <SwiperSlide key={id}>
                                 <Box
                                     sx={{
@@ -120,36 +83,17 @@ const Skills = () => {
                                             width: 700,
                                             height: 360,
                                         },
-                                        // backgroundColor: 'var(--input-color)'
 
-                                    }}
-                                >
-                                    <Paper elevation={3} style={{ backgroundColor: 'var(--input-color)', width: "100%" }}>
+                                    }}>
+
+                                    <Paper elevation={3} style={{ backgroundColor: 'var(--input-color)', width: "100%", transition: 'all 0.3s ease-in-out' }}>
                                         <div className="app_skills-item app_flex">
-                                            <div className="app_skills-item ">
-                                                <img src={skill.icon} alt={skill.name} />
-                                                <p>dcb</p>
-                                            </div>
-                                            <div className="app_skills-item">
-                                                <img src={skill.icon} alt={skill.name} />
-                                                <p>dcb</p>
-                                            </div>
-                                            <div className="app_skills-item">
-                                                <img src={skill.icon} alt={skill.name} />
-                                                <p>dcb</p>
-                                            </div>
-                                            <div className="app_skills-item">
-                                                <img src={skill.icon} alt={skill.name} />
-                                                <p>dcb</p>
-                                            </div>
-                                            <div className="app_skills-item">
-                                                <img src={skill.icon} alt={skill.name} />
-                                                <p>dcb</p>
-                                            </div>
-                                            <div className="app_skills-item">
-                                                <img src={skill.icon} alt={skill.name} />
-                                                <p>dcb</p>
-                                            </div>
+                                            {skills.map((skill, index) => (
+                                                <div className="app_skills-item" key={index}>
+                                                    <img src={skill.icon} alt={skill.name} />
+                                                    <p>{skill.name}</p>
+                                                </div>
+                                            ))}
                                         </div>
                                     </Paper>
                                 </Box>

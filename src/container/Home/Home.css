@@ -27,7 +27,7 @@
     color: var(--first-color-alt);
 }
 
-.home_img {
+/* .home_img {
     background: url("../../assets/images/kiran.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -39,6 +39,16 @@
     height: 300px;
     background-color: var(--first-color);
     animation: profile_animate 8s ease-in-out infinite 1s;
+} */
+.home_avatar_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_avatar {
+	width: 300px;
+	height: 300px;
 }
 
 @keyframes profile_animate {
@@ -64,7 +74,7 @@
 }
 
 .home_title_letters:hover {
-    color: #17d1c5;
+    color: var(--first-color-alt);
 }
 
 /* Animation on Text */
@@ -72,13 +82,6 @@
     position: relative;
     display: inline-block;
     cursor: default;
-}
-
-.home_subtitle {
-    font-size: var(--h3-font-size);
-    color: var(--text-color);
-    font-weight: var(--font-medium);
-    margin-bottom: var(--mb-0-75);
 }
 
 .home_description {
@@ -126,14 +129,14 @@
 }
 
 @media screen and (max-width: 376px) {
-    .home_img {
+    .home_avatar {
         width: 250px;
         height: 250px;
     }
 }
 
 /* For medium devices */
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 660px) {
 
     .home_content {
         grid-template-columns: max-content 1fr 1fr;
@@ -143,7 +146,7 @@
         grid-column: initial;
     }
 
-    .home_img {
+    .home_avatar_container{
         order: 1;
     }
 
@@ -169,7 +172,12 @@
 
 }
 
-
+@media screen and (max-width: 1024px) {
+    #home-container {
+        margin-left: var(--mb-1-5);
+        margin-right: var(--mb-1-5);
+    }
+}
 /* For large devices */
 /* @media screen and (min-width: 1024px) */
 @media screen and (min-width: 1215px) {

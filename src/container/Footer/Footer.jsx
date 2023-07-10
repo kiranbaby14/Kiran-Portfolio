@@ -14,11 +14,15 @@ const Footer = () => {
                         </div>
 
                         <ul className="footer_links">
+
+                            <li>
+                                <a href="#skills" className="footer_link">Skills</a>
+                            </li>
                             <li>
                                 <a href="#portfolio" className="footer_link">Portfolio</a>
                             </li>
                             <li>
-                                <a href="#skills" className="footer_link">Skills</a>
+                                <a href="#qualification" className="footer_link">Qualification</a>
                             </li>
                             <li>
                                 <a href="#about" className="footer_link">About</a>

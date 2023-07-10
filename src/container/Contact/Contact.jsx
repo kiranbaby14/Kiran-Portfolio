@@ -1,7 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
+import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
 import "./Contact.css";
 
+
 const Contact = () => {
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        // Send email using EmailJS
+        emailjs.sendForm(`${process.env.REACT_APP_EMAIL_SERVICE_ID}`,
+            `${process.env.REACT_APP_EMAIL_TEMPLATE_ID}`,
+            e.target,
+            `${process.env.REACT_APP_EMAIL_PUBLIC_KEY}`)
+            .then(function (response) {
+                console.log('Email sent:', response.status, response.text);
+                // Optionally, display a success message to the user 
+            }, function (error) {
+                console.error('Email error:', error);
+                // Optionally, display an error message to the user
+            });
+        e.target.reset()
+        // Display success notification
+        toast.success('Email sent!', {
+            position: toast.POSITION.TOP_RIGHT
+        });
+    };
+
     return (
         <>
             {/* <!--==================== CONTACT ME ====================--> */}
@@ -43,35 +69,35 @@ const Contact = () => {
                     </div>
 
 
-                    <form action="" className="contact_form grid">
+                    <form onSubmit={handleSubmit} className="contact_form grid">
                         <div className="contact_inputs grid">
                             <div className="contact_content">
                                 <label htmlFor="" className="contact_label">Name</label>
-                                <input type="text" className="contact_input" />
+                                <input type="text" className="contact_input" name='name' required />
                             </div>
 
                             <div className="contact_content">
                                 <label htmlFor="" className="contact_label">Email</label>
-                                <input type="email" className="contact_input" />
+                                <input type="email" className="contact_input" name='email' required />
                             </div>
                         </div>
 
 
                         <div className="contact_content">
                             <label htmlFor="" className="contact_label">Subject</label>
-                            <input type="text" className="contact_input" />
+                            <input type="text" className="contact_input" name="subject" required />
                         </div>
 
                         <div className="contact_content">
                             <label htmlFor="" className="contact_label">Message</label>
-                            <textarea name="" id="" cols="0" rows="5" className="contact_input"></textarea>
+                            <textarea name="" id="" cols="0" rows="5" className="contact_input" name="message" required></textarea>
                         </div>
 
                         <div>
-                            <a href="#home" className="button button-flex">
+                            <button className="button button-flex">
                                 Send Message
                                 <i className="uil uil-message button_icon"></i>
-                            </a>
+                            </button>
                         </div>
                     </form>
 

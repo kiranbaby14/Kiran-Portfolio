@@ -16,12 +16,12 @@ const Skills = () => {
     const [skillName, setSkillName] = useState('');
 
     const skills = {
-        "ML/DL": [{ name: "PyTorch", icon: images.node }, { name: "Tensorflow", icon: images.node }, { name: "Numpy", icon: images.node }, { name: "Pandas", icon: images.node }],
+        "ML/DL": [{ name: "PyTorch", icon: images.pytorch }, { name: "Tensorflow", icon: images.tensorflow }, { name: "Numpy", icon: images.numpy }, { name: "Pandas", icon: images.pandas }],
         "Frontend": [{ name: "HTML", icon: images.html }, { name: "CSS", icon: images.css }, { name: "JavaScript", icon: images.javascript }, { name: "React", icon: images.react }, { name: "Redux", icon: images.redux }],
-        "BackEnd": [{ name: "Django", icon: images.node }, { name: "Node", icon: images.node }, { name: "MongoDB", icon: images.node }, { name: "Express", icon: images.node }],
-        "Programming Languages": [{ name: "Python", icon: images.python }, { name: "Java", icon: images.node }, { name: "JavaScript", icon: images.javascript }, { name: "Solidity", icon: images.node }, { name: "C#", icon: images.node }],
-        "Tools": [{ name: "Git", icon: images.git }, { name: "GitHub", icon: images.git }, { name: "Docker", icon: images.node }],
-        "Softwares": [{ name: "Unity", icon: images.node }, { name: "AndroidStudio", icon: images.node }]
+        "Backend": [{ name: "Django", icon: images.django }, { name: "Node", icon: images.node }, { name: "MongoDB", icon: images.mongodb }, { name: "Express", icon: images.express }],
+        "Programming Languages": [{ name: "Python", icon: images.python }, { name: "Java", icon: images.java }, { name: "JavaScript", icon: images.javascript }, { name: "Solidity", icon: images.solidity }, { name: "C#", icon: images.csharp }],
+        "Tools": [{ name: "Git", icon: images.git }, { name: "GitHub", icon: images.github }, { name: "Docker", icon: images.docker },  { name: "Postman", icon: images.postman }],
+        "Softwares": [{ name: "Unity", icon: images.unity }, { name: "AndroidStudio", icon: images.androidstudio }, { name: "MongoDBAtlas", icon: images.mongodbatlas }]
 
     };
 

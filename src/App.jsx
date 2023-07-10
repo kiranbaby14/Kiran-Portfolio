@@ -3,6 +3,8 @@ import {
   Header, Home, About, Skills,
   Qualification, Portfolio, Contact, Footer
 } from "./container/index"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import JavaScript from "./javaScript/script";
 import "./App.css";
 
@@ -16,7 +18,7 @@ const App = () => {
   }, [])
 
   const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light-theme");
-  const [themeIcon, setThemeIcon] = useState(localStorage.getItem("icon") ? localStorage.getItem("icon"): "uil uil-sun change-theme");
+  const [themeIcon, setThemeIcon] = useState(localStorage.getItem("icon") ? localStorage.getItem("icon") : "uil uil-sun change-theme");
 
   useEffect(() => {
     localStorage.setItem("theme", theme);
@@ -33,22 +35,25 @@ const App = () => {
   }
 
   return (
-    <ThemeContext.Provider value={{ theme, themeIcon, toggleTheme }}>
-      <div className={theme}>
-        <Header />
-        <Home />
-        <About />
-        <Skills />
-        <Qualification />
-        <Portfolio />
-        <Contact />
-        <Footer />
-        {/*  SCROLL TOP  */}
-        <a href="#home" className="scrollup" id="scroll-up">
-          <i className="uil uil-arrow-up scrollup_icon"></i>
-        </a>
-      </div>
-    </ThemeContext.Provider>
+    <>
+      <ThemeContext.Provider value={{ theme, themeIcon, toggleTheme }}>
+        <div className={theme}>
+          <Header />
+          <Home />
+          <About />
+          <Skills />
+          <Qualification />
+          <Portfolio />
+          <Contact />
+          <Footer />
+          {/*  SCROLL TOP  */}
+          <a href="#home" className="scrollup" id="scroll-up">
+            <i className="uil uil-arrow-up scrollup_icon"></i>
+          </a>
+        </div>
+      </ThemeContext.Provider>
+      <ToastContainer/>
+    </>
   );
 }
 

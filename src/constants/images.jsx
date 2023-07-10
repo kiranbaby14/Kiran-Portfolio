@@ -12,6 +12,22 @@ import redux from '../assets/images/redux.png';
 import sass from '../assets/images/sass.png';
 import typescript from '../assets/images/typescript.png';
 import vue from '../assets/images/vue.png';
+import django from '../assets/images/django.png';
+import docker from '../assets/images/docker.png';
+import express from '../assets/images/express.png';
+import github from '../assets/images/github.png';
+import java from '../assets/images/java.png';
+import mongodb from '../assets/images/mongoDB.png';
+import mongodbatlas from '../assets/images/mongodbatlas.png';
+import numpy from '../assets/images/numpy.png';
+import pandas from '../assets/images/pandas.png';
+import postman from '../assets/images/postman.png';
+import pytorch from '../assets/images/pytorch.png';
+import solidity from '../assets/images/solidity.png';
+import tensorflow from '../assets/images/tensorflow.png';
+import unity from '../assets/images/unity.png';
+import csharp from '../assets/images/csharp.png';
+import androidstudio from '../assets/images/androidstudio.png';
 
 import about01 from '../assets/images/about01.png';
 import about02 from '../assets/images/about02.png';
@@ -42,6 +58,23 @@ export default {
   sass,
   typescript,
   vue,
+  django,
+  docker,
+  express,
+  github,
+  java,
+  mongodb,
+  mongodbatlas,
+  numpy,
+  pandas,
+  postman,
+  pytorch,
+  solidity,
+  tensorflow,
+  unity,
+  csharp,
+  androidstudio,
+
   about01,
   about02,
   about03,

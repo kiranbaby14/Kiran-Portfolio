@@ -1,21 +1,21 @@
 import React, { useState } from 'react'
-import "./Portfolio.css";
 import { images } from "../../constants";
 import { motion, AnimatePresence } from 'framer-motion';
+import "./Portfolio.css";
 
 const Portfolio = () => {
 
     const [tabActive, setTabActive] = useState(0);
     const portfolioImages = [
-        { "img": images.about02, _id: [1, 2], id: 1}, { "img": images.about03, _id: [0, 1, 2], id: 2},
+        { "img": images.about02, _id: [1, 2], id: 1 }, { "img": images.about03, _id: [0, 1, 2], id: 2 },
 
-        { "img": images.about01, _id: [0], id: 3}, { "img": images.about04, _id: [0, 1, 2], id: 4},
-        { "img": images.about03, _id: [0, 1], id: 5}, { "img": images.about01, _id: [0, 1], id: 6},
-        { "img": images.about01, _id: [0, 1], id: 7}, { "img": images.about02, _id: [0, 1], id: 8},
+        { "img": images.about01, _id: [0], id: 3 }, { "img": images.about04, _id: [0, 1, 2], id: 4 },
+        { "img": images.about03, _id: [0, 1], id: 5 }, { "img": images.about01, _id: [0, 1], id: 6 },
+        { "img": images.about01, _id: [0, 1], id: 7 }, { "img": images.about02, _id: [0, 1], id: 8 },
 
-        { "img": images.about03, _id: [0, 1], id: 9}, { "img": images.about01, _id: [0, 1], id: 10},
-        { "img": images.about01, _id: [0, 1], id: 11}, { "img": images.about01, _id: [0, 1], id: 12},
-        { "img": images.about01, _id: [0, 1], id: 13}]
+        { "img": images.about03, _id: [0, 1], id: 9 }, { "img": images.about01, _id: [0, 1], id: 10 },
+        { "img": images.about01, _id: [0, 1], id: 11 }, { "img": images.about01, _id: [0, 1], id: 12 },
+        { "img": images.about01, _id: [0, 1], id: 13 }]
 
     const [filteredPortfolio, setFilteredPortfolio] = useState(portfolioImages.filter((data) => data._id.includes(0)))
 
@@ -57,8 +57,14 @@ const Portfolio = () => {
                                     exit={{ opacity: 0 }}
                                     transition={{ duration: 0.5 }}
                                 >
-                                    <img src={img.img} alt="lpo"/>
-                                    <p>ajdbv</p>
+                                    <img src={img.img} alt="prtfolio-image" />
+                                    <span>
+                                        <a href="" target="_blank" rel="noopener noreferrer" className="home_social-icon">
+                                            <i className="uil uil-github-alt"></i>
+                                        </a>
+                                        <p>ajdbv</p>
+                                    </span>
+
                                 </motion.div>
                             ))}
                         </AnimatePresence>

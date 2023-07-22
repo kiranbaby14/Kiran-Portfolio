@@ -42,6 +42,12 @@ import machinelearning from "../assets/images/ml.jpg";
 import blockchain from "../assets/images/blockchain.jpg";
 import gamedeveloper from "../assets/images/game_dev.jpg";
 
+import travelAdvisor from "../assets/images/travelAdvisor.png";
+import spheron from "../assets/images/spheron.png";
+import ninjesk from "../assets/images/ninjesk.png";
+import hyperface from "../assets/images/hyperface.jpg";
+import portfolio from "../assets/images/portfolio.png";
+
 
 export default {
   api,
@@ -86,4 +92,10 @@ export default {
   machinelearning,
   blockchain,
   gamedeveloper,
+
+  travelAdvisor,
+  spheron,
+  ninjesk,
+  hyperface,
+  portfolio
 };

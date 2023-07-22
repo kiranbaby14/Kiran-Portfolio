@@ -1,11 +1,10 @@
 import React, { Suspense } from "react";
 
 import TypeWriterEffect from 'react-typewriter-effect';
-import { images } from "../../constants";
 import './Home.css'
 import { motion } from "framer-motion";
 import { Canvas } from "@react-three/fiber";
-import { Environment, OrbitControls } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import Fade from 'react-reveal/Fade';
 import Spin from 'react-reveal/Spin';
 import Luffy from './Luffy'

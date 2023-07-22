@@ -76,7 +76,7 @@ const About = () => {
                             </Swiper>
                         </div>
                         <div className="about_buttons">
-                            <a download="" href={UserCv} className="button button-flex">
+                            <a target='_blank' href={UserCv} className="button button-flex">
                                 Download CV<i className="uil uil-download-alt button_icon"></i>
                             </a>
                         </div>

@@ -12,22 +12,22 @@ const Portfolio = () => {
         {
             "title": "Classification and Analysis of GAP programming practices on GitHub",
             "githubURL": "https://github.com/kiranbaby14/Analysis-of-GAP-programming-practices-on-GitHub",
-            "liveLink": "", "img": images.about02, _id: [0, 1],
+            "liveLink": "", "img": images.about04, _id: [0, 1],
             id: 1,
             "tech-stacks": ["PyTorch", "scikit-learn", "GitHub-Actions", "Docker", "React", "Django", "Redux", "Google-Cloud"]
         },
-        { "title": "ML Implemented Mailing Service ", "githubURL": "https://github.com/kiranbaby14/ML-Implemented-Mailing-Service", "liveLink": "", "img": images.about03, _id: [0, 1], id: 2, "tech-stacks": ["scikit-learn", "Docker", "React", "Django", "Redux", "Google-Cloud", "Celery"] },
+        { "title": "ML Implemented Mailing Service ", "githubURL": "https://github.com/kiranbaby14/ML-Implemented-Mailing-Service", "liveLink": "", "img": images.about04, _id: [0, 1], id: 2, "tech-stacks": ["scikit-learn", "Docker", "React", "Django", "Redux", "Google-Cloud", "Celery"] },
         { "title": "Travel-Advisor ", "githubURL": "https://github.com/kiranbaby14/Travel-Advisor", "liveLink": "", "img": images.travelAdvisor, _id: [0], id: 8, "tech-stacks": ["React", "RapidAPI", "Google Maps API", "Material UI"] },
         { "title": "BookUrTrip Clone", "githubURL": "https://github.com/kiranbaby14/BookUrTrip", "liveLink": "", "img": images.about04, _id: [0], id: 4, "tech-stacks": ["React", "Node.js", "MongoDB", "Express", "Context API"] },
-        { "title": "UltraRun Marathon", "githubURL": "https://github.com/kiranbaby14/Marathon", "liveLink": "https://www.universityultrarun.com/", "img": images.about01, _id: [0], id: 3, "tech-stacks": ["React", "Leaflet.js", "Google Maps API", "Context API"] },
-        { "title": "B-Drive", "githubURL": "https://github.com/kiranbaby14/B-Drive", "liveLink": "", "img": images.about03, _id: [0, 3], id: 5, "tech-stacks": ["React", "Ethereum Blockchain", "Hardhat", "Ether.js"] },
-        { "title": "Online Store", "githubURL": "https://github.com/kiranbaby14/Online-Store-Frontend", "liveLink": "", "img": images.about01, _id: [0], id: 7, "tech-stacks": ["React", "mongoDB", "Node.js", "Express", "Redux"] },
-        { "title": "Online Store-Admin-Panel", "githubURL": "https://github.com/kiranbaby14/Online-Store-Admin-Panel", "liveLink": "", "img": images.about01, _id: [0], id: 6, "tech-stacks": ["React", "mongoDB", "Node.js", "Express", "Redux"] },
+        { "title": "UltraRun Marathon", "githubURL": "https://github.com/kiranbaby14/Marathon", "liveLink": "https://www.universityultrarun.com/", "img": images.ultrarun, _id: [0], id: 3, "tech-stacks": ["React", "Leaflet.js", "Google Maps API", "Context API"] },
+        { "title": "B-Drive", "githubURL": "https://github.com/kiranbaby14/B-Drive", "liveLink": "", "img": images.about04, _id: [0, 3], id: 5, "tech-stacks": ["React", "Ethereum Blockchain", "Hardhat", "Ether.js"] },
+        { "title": "Online Store", "githubURL": "https://github.com/kiranbaby14/Online-Store-Frontend", "liveLink": "", "img": images.about04, _id: [0], id: 7, "tech-stacks": ["React", "mongoDB", "Node.js", "Express", "Redux"] },
+        { "title": "Online Store-Admin-Panel", "githubURL": "https://github.com/kiranbaby14/Online-Store-Admin-Panel", "liveLink": "", "img": images.about04, _id: [0], id: 6, "tech-stacks": ["React", "mongoDB", "Node.js", "Express", "Redux"] },
         { "title": "Portfolio Website", "githubURL": "https://github.com/kiranbaby14/Kiran-Portfolio", "liveLink": "", "img": images.portfolio, _id: [0], id: 13, "tech-stacks": ["React", "Material UI", "Framer-motion", "Email.js", "Three.js", "Swiper.js"] },
         { "title": "Hyperface-Implemented-Multiplayer-TPS-Game", "githubURL": "https://github.com/kiranbaby14/Hyperface-Implemented-Multiplayer-TPS-Game", "liveLink": "", "img": images.hyperface, _id: [1, 2], id: 10, "tech-stacks": ["OpenCV", "Scikit-learn", "Photon server", "Unity", "C#"] },
         { "title": "Ninjesk-The-endless-runner-ninja ", "githubURL": "https://github.com/kiranbaby14/Ninjesk-The-endless-runner-ninja", "liveLink": "https://drive.google.com/file/d/1Tda2icc4q8GaztYYozKkiT0jwJUr_HqE/view?usp=sharing", "img": images.ninjesk, _id: [2], id: 9, "tech-stacks": ["Unity", "C#", "Google-Admob"] },
         { "title": "Spheron-The-Ball-Game ", "githubURL": "https://github.com/kiranbaby14/Instagram-Clone", "liveLink": "https://play.google.com/store/apps/details?id=com.Jbk.Spheron", "img": images.spheron, _id: [2], id: 11, "tech-stacks": ["Unity", "C#"] },
-        { "title": "Instagram-Clone ", "githubURL": "https://github.com/kiranbaby14/Spheron-The-Ball-Game", "liveLink": "", "img": images.about01, _id: [4], id: 12, "tech-stacks": ["AndroidStudio", "Kotlin"] },
+        { "title": "Instagram-Clone ", "githubURL": "https://github.com/kiranbaby14/Spheron-The-Ball-Game", "liveLink": "", "img": images.instagram, _id: [4], id: 12, "tech-stacks": ["AndroidStudio", "Kotlin"] },
     ]
 
     const [moreBtnClick, setMoreBtnClick] = useState(Array(portfolioDetails.length).fill(false));

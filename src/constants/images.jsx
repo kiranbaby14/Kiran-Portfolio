@@ -47,6 +47,8 @@ import spheron from "../assets/images/spheron.png";
 import ninjesk from "../assets/images/ninjesk.png";
 import hyperface from "../assets/images/hyperface.jpg";
 import portfolio from "../assets/images/portfolio.png";
+import instagram from "../assets/images/instagram.png";
+import ultrarun from "../assets/images/ultrarun.png";
 
 
 export default {
@@ -97,5 +99,7 @@ export default {
   spheron,
   ninjesk,
   hyperface,
-  portfolio
+  portfolio,
+  instagram,
+  ultrarun
 };

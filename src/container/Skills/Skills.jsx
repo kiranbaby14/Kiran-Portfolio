@@ -64,7 +64,7 @@ const Skills = () => {
                             slideShadows: true,
                         }}
 
-                        pagination={true}
+                        pagination={{ clickable: true }}
                         modules={[EffectCoverflow, Pagination, Navigation]}
                         className="swiper_container"
                         onSlideChange={handleSlideChange}
@@ -91,7 +91,7 @@ const Skills = () => {
                                             {skills.map((skill, index) => (
                                                 <div className="app_skills-item" key={index}>
                                                     <img src={skill.icon} alt={skill.name} />
-                                                    <p>{skill.name}</p>
+                                                    <p className='skill_name'>{skill.name}</p>
                                                 </div>
                                             ))}
                                         </div>

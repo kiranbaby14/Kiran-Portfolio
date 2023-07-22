@@ -91,7 +91,7 @@
     width: 100%;
 }
 
-.overlay {
+#about .overlay {
     position: absolute;
     top: 0;
     left: 0;

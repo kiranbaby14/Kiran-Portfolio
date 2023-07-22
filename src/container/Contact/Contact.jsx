@@ -1,31 +1,37 @@
 import React, { useState } from 'react'
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
+import CircularProgress from '@mui/material/CircularProgress';
 import "./Contact.css";
 
 
 const Contact = () => {
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    const [btnClicked, setBtnClicked] = useState(false);
 
+    const handleSubmit = (e) => {
+        console.log("adfh")
+        e.preventDefault();
+        setBtnClicked(true)
         // Send email using EmailJS
         emailjs.sendForm(`${process.env.REACT_APP_EMAIL_SERVICE_ID}`,
             `${process.env.REACT_APP_EMAIL_TEMPLATE_ID}`,
             e.target,
             `${process.env.REACT_APP_EMAIL_PUBLIC_KEY}`)
-            .then(function (response) {
-                console.log('Email sent:', response.status, response.text);
-                // Optionally, display a success message to the user 
-            }, function (error) {
-                console.error('Email error:', error);
-                // Optionally, display an error message to the user
+            .then((response)  => {
+                // Display success notification
+                e.target.reset()
+                setBtnClicked(false)
+                toast.success('Email sent!', {
+                    position: toast.POSITION.TOP_RIGHT
+                });
+            }, (error) => {
+                setBtnClicked(false)
+                toast.error('Email not sent!', {
+                    position: toast.POSITION.TOP_RIGHT
+                });
             });
-        e.target.reset()
-        // Display success notification
-        toast.success('Email sent!', {
-            position: toast.POSITION.TOP_RIGHT
-        });
+    
     };
 
     return (
@@ -94,9 +100,13 @@ const Contact = () => {
                         </div>
 
                         <div>
-                            <button className="button button-flex">
+                            <button className="button button-flex" disabled={btnClicked}>
                                 Send Message
+                                { !btnClicked ?
                                 <i className="uil uil-message button_icon"></i>
+                                :
+                                <CircularProgress style={{ color: "white", width: "20px", height: "20px",  marginLeft: "0.5rem"}}/>
+                                }
                             </button>
                         </div>
                     </form>

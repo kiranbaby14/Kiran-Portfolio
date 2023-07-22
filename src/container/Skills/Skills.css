@@ -62,6 +62,10 @@
     justify-content: center;
 }
 
+.skill_name {
+    color: var(--title-color);
+}
+
 @media screen and (max-width: 900px) {
     .app_skills-container {
         width: 100%;

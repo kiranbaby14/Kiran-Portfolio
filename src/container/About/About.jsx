@@ -36,7 +36,7 @@ const About = () => {
                                 }}
                                 loop={true}
 
-                                pagination={true}
+                                pagination={{ clickable: true }}
                                 modules={[EffectCube, Pagination]}
                                 className="mySwiper"
                             >
@@ -70,7 +70,7 @@ const About = () => {
                                     <div className="overlay"></div>
                                     <span className='swiper_slide_text'>
                                         <h1>Web3 enthusiast</h1>
-                                        <p>I would love to explore the web3 space. I have some knowledge in building DApps using the Ethereum blockchain, Solidity, and Ether.js.</p>
+                                        <p>I would love to explore the web3 space. I have some knowledge in building DApps using the Ethereum blockchain, Solidity, Hardhat, chai, mocha and Ether.js.</p>
                                     </span>
                                 </SwiperSlide>
                             </Swiper>

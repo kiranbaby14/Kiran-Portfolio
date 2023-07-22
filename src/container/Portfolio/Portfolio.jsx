@@ -5,7 +5,9 @@ import "./Portfolio.css";
 
 const Portfolio = () => {
 
+
     const [tabActive, setTabActive] = useState(0);
+
     const portfolioImages = [
         { "img": images.about02, _id: [1, 2], id: 1 }, { "img": images.about03, _id: [0, 1, 2], id: 2 },
 
@@ -16,6 +18,8 @@ const Portfolio = () => {
         { "img": images.about03, _id: [0, 1], id: 9 }, { "img": images.about01, _id: [0, 1], id: 10 },
         { "img": images.about01, _id: [0, 1], id: 11 }, { "img": images.about01, _id: [0, 1], id: 12 },
         { "img": images.about01, _id: [0, 1], id: 13 }]
+
+    const [moreBtnClick, setMoreBtnClick] = useState(Array(portfolioImages.length).fill(false));
 
     const [filteredPortfolio, setFilteredPortfolio] = useState(portfolioImages.filter((data) => data._id.includes(0)))
 
@@ -28,6 +32,16 @@ const Portfolio = () => {
         setFilteredPortfolio(newFilteredPortfolio);
 
     }
+
+    const handleClickForMoreBtn = (index) => {
+        setMoreBtnClick((prev) => {
+          const updatedArray = [...prev]; // Create a copy of the previous state array
+          updatedArray[index] = !prev[index]; // Toggle the value at the specified index
+          return updatedArray; // Return the updated array as the new state
+        });
+      
+        console.log(moreBtnClick); // The state update may not be reflected immediately in this console.log due to the asynchronous nature of state updates.
+      };
 
     return (
         <>
@@ -46,7 +60,7 @@ const Portfolio = () => {
                             </button>
                         ))}
                     </div>
-
+                      
                     <div className='image_container'>
                         <AnimatePresence>
                             {filteredPortfolio.map((img) => (
@@ -57,12 +71,28 @@ const Portfolio = () => {
                                     exit={{ opacity: 0 }}
                                     transition={{ duration: 0.5 }}
                                 >
-                                    <img src={img.img} alt="prtfolio-image" />
-                                    <span>
-                                        <a href="" target="_blank" rel="noopener noreferrer" className="home_social-icon">
+                                    <div className="overlay"></div>
+                                    <img src={img.img} alt="portfolio-image" />
+                                    {!moreBtnClick[img.id] ? <span className='title'>Title</span> : 
+                                    <span className='tech-stacks'>
+                                        <span>sad</span>
+                                        <span>sad</span>
+                                        <span>sad</span>
+                                        <span>sad</span>
+                                        <span>sad</span>
+                                        <span>sad</span>
+                                        <span>sad</span>
+                                    </span>}
+                                    <span className='clickables'>
+                                        <a href="" target="_blank" rel="noopener noreferrer" className="github-icon">
                                             <i className="uil uil-github-alt"></i>
                                         </a>
-                                        <p>ajdbv</p>
+                                        <button className='live-btn'>
+                                            live  
+                                        </button>
+                                        <button  className='more-btn' onClick={() => handleClickForMoreBtn(img.id)}>
+                                            {!moreBtnClick[img.id] ? <>more..</> : <>close</>}  
+                                        </button>
                                     </span>
 
                                 </motion.div>

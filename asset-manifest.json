@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/Kiran-Portfolio/static/css/main.9c56d125.css",
-    "main.js": "/Kiran-Portfolio/static/js/main.1db591f4.js",
+    "main.js": "/Kiran-Portfolio/static/js/main.b9558d79.js",
     "static/media/about04.png": "/Kiran-Portfolio/static/media/about04.fa7b3a72ed32b0e25bfb.png",
     "static/media/about02.png": "/Kiran-Portfolio/static/media/about02.7a3df03410ee756268ec.png",
     "static/media/about01.png": "/Kiran-Portfolio/static/media/about01.080509de05322b7aafda.png",
     "static/media/travelAdvisor.png": "/Kiran-Portfolio/static/media/travelAdvisor.a7918d3db728174f2d70.png",
+    "static/media/ultrarun.png": "/Kiran-Portfolio/static/media/ultrarun.72dfcb59fcfc1ad5879c.png",
     "static/media/web_dev.jpg": "/Kiran-Portfolio/static/media/web_dev.3cd9be87b73d12843528.jpg",
     "static/media/game_dev.jpg": "/Kiran-Portfolio/static/media/game_dev.af355ef3a38cf63d633b.jpg",
     "static/media/spheron.png": "/Kiran-Portfolio/static/media/spheron.24910297e8fdeb0da18d.png",
@@ -43,10 +44,10 @@
     "index.html": "/Kiran-Portfolio/index.html",
     "static/media/circle.svg": "/Kiran-Portfolio/static/media/circle.134eeeb1e58895b892195fe8ed63bc9f.svg",
     "main.9c56d125.css.map": "/Kiran-Portfolio/static/css/main.9c56d125.css.map",
-    "main.1db591f4.js.map": "/Kiran-Portfolio/static/js/main.1db591f4.js.map"
+    "main.b9558d79.js.map": "/Kiran-Portfolio/static/js/main.b9558d79.js.map"
   },
   "entrypoints": [
     "static/css/main.9c56d125.css",
-    "static/js/main.1db591f4.js"
+    "static/js/main.b9558d79.js"
   ]
 }

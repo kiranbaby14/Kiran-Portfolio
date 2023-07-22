@@ -8,40 +8,50 @@ const Portfolio = () => {
 
     const [tabActive, setTabActive] = useState(0);
 
-    const portfolioImages = [
-        { "img": images.about02, _id: [1, 2], id: 1 }, { "img": images.about03, _id: [0, 1, 2], id: 2 },
+    const portfolioDetails = [
+        {
+            "title": "Classification and Analysis of GAP programming practices on GitHub",
+            "githubURL": "https://github.com/kiranbaby14/Analysis-of-GAP-programming-practices-on-GitHub",
+            "liveLink": "", "img": images.about02, _id: [0, 1],
+            id: 1,
+            "tech-stacks": ["PyTorch", "scikit-learn", "GitHub-Actions", "Docker", "React", "Django", "Redux", "Google-Cloud"]
+        },
+        { "title": "ML Implemented Mailing Service ", "githubURL": "https://github.com/kiranbaby14/ML-Implemented-Mailing-Service", "liveLink": "", "img": images.about03, _id: [0, 1], id: 2, "tech-stacks": ["scikit-learn", "Docker", "React", "Django", "Redux", "Google-Cloud", "Celery"] },
+        { "title": "Travel-Advisor ", "githubURL": "https://github.com/kiranbaby14/Travel-Advisor", "liveLink": "", "img": images.about02, _id: [0], id: 8, "tech-stacks": ["React", "RapidAPI", "Google Maps API", "Material UI"] },
+        { "title": "BookUrTrip Clone", "githubURL": "https://github.com/kiranbaby14/BookUrTrip", "liveLink": "", "img": images.about04, _id: [0], id: 4, "tech-stacks": ["React", "Node.js", "MongoDB", "Express", "Context API"] },
+        { "title": "UltraRun Marathon", "githubURL": "https://github.com/kiranbaby14/Marathon", "liveLink": "https://www.universityultrarun.com/", "img": images.about01, _id: [0], id: 3, "tech-stacks": ["React", "Leaflet.js", "Google Maps API", "Context API"] },
+        { "title": "B-Drive", "githubURL": "https://github.com/kiranbaby14/B-Drive", "liveLink": "", "img": images.about03, _id: [0, 3], id: 5, "tech-stacks": ["React", "Ethereum Blockchain", "Hardhat", "Ether.js"] },
+        { "title": "Online Store", "githubURL": "https://github.com/kiranbaby14/Online-Store-Frontend", "liveLink": "", "img": images.about01, _id: [0], id: 7, "tech-stacks": ["React", "mongoDB", "Node.js", "Express", "Redux"] },
+        { "title": "Online Store-Admin-Panel", "githubURL": "https://github.com/kiranbaby14/Online-Store-Admin-Panel", "liveLink": "", "img": images.about01, _id: [0], id: 6, "tech-stacks": ["React", "mongoDB", "Node.js", "Express", "Redux"] },
+        { "title": "Portfolio Website", "githubURL": "https://github.com/kiranbaby14/Kiran-Portfolio", "liveLink": "", "img": images.about01, _id: [0], id: 13, "tech-stacks": ["React", "Material UI", "Framer-motion", "Email.js", "Three.js", "Swiper.js"] },
+        { "title": "Hyperface-Implemented-Multiplayer-TPS-Game", "githubURL": "https://github.com/kiranbaby14/Hyperface-Implemented-Multiplayer-TPS-Game", "liveLink": "", "img": images.about01, _id: [1, 2], id: 10, "tech-stacks": ["OpenCV", "Scikit-learn", "Photon server", "Unity", "C#"] },
+        { "title": "Ninjesk-The-endless-runner-ninja ", "githubURL": "https://github.com/kiranbaby14/Ninjesk-The-endless-runner-ninja", "liveLink": "https://drive.google.com/file/d/1Tda2icc4q8GaztYYozKkiT0jwJUr_HqE/view?usp=sharing", "img": images.about03, _id: [2], id: 9, "tech-stacks": ["Unity", "C#", "Google-Admob"] },
+        { "title": "Spheron-The-Ball-Game ", "githubURL": "https://github.com/kiranbaby14/Instagram-Clone", "liveLink": "https://play.google.com/store/apps/details?id=com.Jbk.Spheron", "img": images.about01, _id: [2], id: 11, "tech-stacks": ["Unity", "C#"] },
+        { "title": "Instagram-Clone ", "githubURL": "https://github.com/kiranbaby14/Spheron-The-Ball-Game", "liveLink": "", "img": images.about01, _id: [4], id: 12, "tech-stacks": ["AndroidStudio", "Kotlin"] },
+    ]
 
-        { "img": images.about01, _id: [0], id: 3 }, { "img": images.about04, _id: [0, 1, 2], id: 4 },
-        { "img": images.about03, _id: [0, 1], id: 5 }, { "img": images.about01, _id: [0, 1], id: 6 },
-        { "img": images.about01, _id: [0, 1], id: 7 }, { "img": images.about02, _id: [0, 1], id: 8 },
+    const [moreBtnClick, setMoreBtnClick] = useState(Array(portfolioDetails.length).fill(false));
 
-        { "img": images.about03, _id: [0, 1], id: 9 }, { "img": images.about01, _id: [0, 1], id: 10 },
-        { "img": images.about01, _id: [0, 1], id: 11 }, { "img": images.about01, _id: [0, 1], id: 12 },
-        { "img": images.about01, _id: [0, 1], id: 13 }]
-
-    const [moreBtnClick, setMoreBtnClick] = useState(Array(portfolioImages.length).fill(false));
-
-    const [filteredPortfolio, setFilteredPortfolio] = useState(portfolioImages.filter((data) => data._id.includes(0)))
+    const [filteredPortfolio, setFilteredPortfolio] = useState(portfolioDetails.filter((data) => data._id.includes(0)))
 
 
-    const areas = ["Web Dev", "Game Dev", "ML/AI"]
+    const areas = ["Web Dev", "ML/AI", "Game Dev", "BlockChain", "AndroidStudio"]
 
     const handleClickFilter = (id) => {
         setTabActive(id);
-        const newFilteredPortfolio = portfolioImages.filter((data) => data._id.includes(id))
+        const newFilteredPortfolio = portfolioDetails.filter((data) => data._id.includes(id))
         setFilteredPortfolio(newFilteredPortfolio);
 
     }
 
     const handleClickForMoreBtn = (index) => {
         setMoreBtnClick((prev) => {
-          const updatedArray = [...prev]; // Create a copy of the previous state array
-          updatedArray[index] = !prev[index]; // Toggle the value at the specified index
-          return updatedArray; // Return the updated array as the new state
+            const updatedArray = [...prev]; // Create a copy of the previous state array
+            updatedArray[index] = !prev[index]; // Toggle the value at the specified index
+            return updatedArray; // Return the updated array as the new state
         });
-      
-        console.log(moreBtnClick); // The state update may not be reflected immediately in this console.log due to the asynchronous nature of state updates.
-      };
+
+    };
 
     return (
         <>
@@ -60,11 +70,11 @@ const Portfolio = () => {
                             </button>
                         ))}
                     </div>
-                      
+
                     <div className='image_container'>
                         <AnimatePresence>
-                            {filteredPortfolio.map((img) => (
-                                <motion.div className='image_card' key={img.id}
+                            {filteredPortfolio.map((details) => (
+                                <motion.div className='image_card' key={details.id}
                                     layout
                                     initial={{ opacity: 0 }}
                                     whileInView={{ opacity: 1 }}
@@ -72,26 +82,34 @@ const Portfolio = () => {
                                     transition={{ duration: 0.5 }}
                                 >
                                     <div className="overlay"></div>
-                                    <img src={img.img} alt="portfolio-image" />
-                                    {!moreBtnClick[img.id] ? <span className='title'>Title</span> : 
-                                    <span className='tech-stacks'>
-                                        <span>sad</span>
-                                        <span>sad</span>
-                                        <span>sad</span>
-                                        <span>sad</span>
-                                        <span>sad</span>
-                                        <span>sad</span>
-                                        <span>sad</span>
-                                    </span>}
+                                    <img src={details.img} alt="portfolio-image" />
+                                    {!moreBtnClick[details.id] ?
+                                        <span className='title'>{details.title}</span>
+                                        :
+                                        <span className='tech-stacks'>
+                                            <ol>
+                                                {
+                                                    details['tech-stacks'].map((stack, index) =>
+                                                        (<li key={index}>{stack}</li>))
+
+                                                }
+                                            </ol>
+                                        </span>}
                                     <span className='clickables'>
-                                        <a href="" target="_blank" rel="noopener noreferrer" className="github-icon">
+                                        <a href={details.githubURL} target="_blank" rel="noopener noreferrer" className="github-icon">
                                             <i className="uil uil-github-alt"></i>
                                         </a>
-                                        <button className='live-btn'>
-                                            live  
-                                        </button>
-                                        <button  className='more-btn' onClick={() => handleClickForMoreBtn(img.id)}>
-                                            {!moreBtnClick[img.id] ? <>more..</> : <>close</>}  
+                                        {details.liveLink != "" ?
+                                            <button className='live-btn'>
+                                                <a href={details.liveLink} target="_blank">
+                                                    live
+                                                </a>
+                                            </button>
+                                            :
+                                            null
+                                        }
+                                        <button className='more-btn' onClick={() => handleClickForMoreBtn(details.id)}>
+                                            {!moreBtnClick[details.id] ? <>more..</> : <>close</>}
                                         </button>
                                     </span>
 

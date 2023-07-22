@@ -1,4 +1,5 @@
 {
+  "homepage": "http://kiranbaby14.github.io/Kiran-Portfolio",
   "name": "kiran-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -27,6 +28,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gn-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -51,6 +54,7 @@
   },
   "devDependencies": {
     "envify": "^4.1.0",
+    "gh-pages": "^5.0.0",
     "terser": "^5.16.1",
     "terser-brunch": "^4.1.0",
     "uglifyify": "^5.0.2"

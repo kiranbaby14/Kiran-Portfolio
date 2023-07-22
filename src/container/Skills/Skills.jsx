@@ -20,7 +20,7 @@ const Skills = () => {
         "Frontend": [{ name: "HTML", icon: images.html }, { name: "CSS", icon: images.css }, { name: "JavaScript", icon: images.javascript }, { name: "React", icon: images.react }, { name: "Redux", icon: images.redux }],
         "Backend": [{ name: "Django", icon: images.django }, { name: "Node", icon: images.node }, { name: "MongoDB", icon: images.mongodb }, { name: "Express", icon: images.express }],
         "Programming Languages": [{ name: "Python", icon: images.python }, { name: "Java", icon: images.java }, { name: "JavaScript", icon: images.javascript }, { name: "Solidity", icon: images.solidity }, { name: "C#", icon: images.csharp }],
-        "Tools": [{ name: "Git", icon: images.git }, { name: "GitHub", icon: images.github }, { name: "Docker", icon: images.docker },  { name: "Postman", icon: images.postman }],
+        "Tools": [{ name: "Git", icon: images.git }, { name: "GitHub", icon: images.github }, { name: "GitHubActions", icon: images.githubactions }, { name: "Docker", icon: images.docker },  { name: "Postman", icon: images.postman }],
         "Softwares": [{ name: "Unity", icon: images.unity }, { name: "AndroidStudio", icon: images.androidstudio }, { name: "MongoDBAtlas", icon: images.mongodbatlas }]
 
     };

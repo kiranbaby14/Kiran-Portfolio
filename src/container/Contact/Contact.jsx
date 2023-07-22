@@ -10,7 +10,6 @@ const Contact = () => {
     const [btnClicked, setBtnClicked] = useState(false);
 
     const handleSubmit = (e) => {
-        console.log("adfh")
         e.preventDefault();
         setBtnClicked(true)
         // Send email using EmailJS

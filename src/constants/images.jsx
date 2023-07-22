@@ -12,21 +12,22 @@ import redux from '../assets/images/redux.png';
 import sass from '../assets/images/sass.png';
 import typescript from '../assets/images/typescript.png';
 import vue from '../assets/images/vue.png';
-import django from '../assets/images/django.png';
-import docker from '../assets/images/docker.png';
-import express from '../assets/images/express.png';
-import github from '../assets/images/github.png';
+import django from '../assets/images/django.svg';
+import docker from '../assets/images/docker.svg';
+import express from '../assets/images/express.svg';
+import github from '../assets/images/github.svg';
+import githubactions from '../assets/images/githubactions.svg';
 import java from '../assets/images/java.png';
-import mongodb from '../assets/images/mongoDB.png';
+import mongodb from '../assets/images/mongoDB.svg';
 import mongodbatlas from '../assets/images/mongodbatlas.png';
 import numpy from '../assets/images/numpy.png';
 import pandas from '../assets/images/pandas.png';
-import postman from '../assets/images/postman.png';
+import postman from '../assets/images/postman.svg';
 import pytorch from '../assets/images/pytorch.png';
 import solidity from '../assets/images/solidity.png';
 import tensorflow from '../assets/images/tensorflow.png';
-import unity from '../assets/images/unity.png';
-import csharp from '../assets/images/csharp.png';
+import unity from '../assets/images/unity.svg';
+import csharp from '../assets/images/csharp.svg';
 import androidstudio from '../assets/images/androidstudio.png';
 
 import about01 from '../assets/images/about01.png';
@@ -40,7 +41,6 @@ import webdeveloper from "../assets/images/web_dev.jpg";
 import machinelearning from "../assets/images/ml.jpg";
 import blockchain from "../assets/images/blockchain.jpg";
 import gamedeveloper from "../assets/images/game_dev.jpg";
-
 
 
 export default {
@@ -62,6 +62,7 @@ export default {
   docker,
   express,
   github,
+  githubactions,
   java,
   mongodb,
   mongodbatlas,

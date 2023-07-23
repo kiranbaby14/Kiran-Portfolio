@@ -85,7 +85,7 @@ const Contact = () => {
 
                         <div className="contact_content">
                             <label htmlFor="" className="contact_label">Message</label>
-                            <textarea name="" id="" cols="0" rows="5" className="contact_input" name="message" required></textarea>
+                            <textarea id="" cols="0" rows="5" className="contact_input" name="message" required></textarea>
                         </div>
 
                         <div>

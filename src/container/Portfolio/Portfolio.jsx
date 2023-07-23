@@ -5,7 +5,6 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import "./Portfolio.css";
 
@@ -118,9 +117,9 @@ const Portfolio = () => {
                                             <a href={details.githubURL} target="_blank" rel="noopener noreferrer" className="github-icon">
                                                 <i className="uil uil-github-alt"></i>
                                             </a>
-                                            {details.liveLink != "" ?
+                                            {details.liveLink !== "" ?
                                                 <button className='live-btn'>
-                                                    <a href={details.liveLink} target="_blank">
+                                                    <a href={details.liveLink} target="_blank" rel="noreferrer">
                                                         live
                                                     </a>
                                                 </button>

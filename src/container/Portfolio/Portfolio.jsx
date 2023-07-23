@@ -1,6 +1,12 @@
 import React, { useState } from 'react'
 import { images } from "../../constants";
 import { motion, AnimatePresence } from 'framer-motion';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 import "./Portfolio.css";
 
 const Portfolio = () => {
@@ -16,7 +22,7 @@ const Portfolio = () => {
             id: 1,
             "tech-stacks": ["PyTorch", "scikit-learn", "GitHub-Actions", "Docker", "React", "Django", "Redux", "Google-Cloud"]
         },
-        { "title": "ML Implemented Mailing Service ", "githubURL": "https://github.com/kiranbaby14/ML-Implemented-Mailing-Service", "liveLink": "", "img": images.about04, _id: [0, 1], id: 2, "tech-stacks": ["scikit-learn", "Docker", "React", "Django", "Redux", "Google-Cloud", "Celery"] },
+        { "title": "ML Implemented Mailing Service ", "githubURL": "https://github.com/kiranbaby14/ML-Implemented-Mailing-Service", "liveLink": "", "img": images.about04, _id: [0, 1], id: 2, "tech-stacks": ["scikit-learn", "Docker", "React", "Django", "Redux", "Google-Cloud", "Celery", "JWT", "Google/Fb OAuth"] },
         { "title": "Travel-Advisor ", "githubURL": "https://github.com/kiranbaby14/Travel-Advisor", "liveLink": "", "img": images.travelAdvisor, _id: [0], id: 8, "tech-stacks": ["React", "RapidAPI", "Google Maps API", "Material UI"] },
         { "title": "BookUrTrip Clone", "githubURL": "https://github.com/kiranbaby14/BookUrTrip", "liveLink": "", "img": images.about04, _id: [0], id: 4, "tech-stacks": ["React", "Node.js", "MongoDB", "Express", "Context API"] },
         { "title": "UltraRun Marathon", "githubURL": "https://github.com/kiranbaby14/Marathon", "liveLink": "https://www.universityultrarun.com/", "img": images.ultrarun, _id: [0], id: 3, "tech-stacks": ["React", "Leaflet.js", "Google Maps API", "Context API"] },
@@ -81,37 +87,51 @@ const Portfolio = () => {
                                     exit={{ opacity: 0 }}
                                     transition={{ duration: 0.5 }}
                                 >
-                                    <div className="overlay"></div>
-                                    <img src={details.img} alt="portfolio-image" />
-                                    {!moreBtnClick[details.id] ?
-                                        <span className='title'>{details.title}</span>
-                                        :
-                                        <span className='tech-stacks'>
-                                            <ol>
-                                                {
-                                                    details['tech-stacks'].map((stack, index) =>
-                                                        (<li key={index}>{stack}</li>))
-
-                                                }
-                                            </ol>
-                                        </span>}
-                                    <span className='clickables'>
-                                        <a href={details.githubURL} target="_blank" rel="noopener noreferrer" className="github-icon">
-                                            <i className="uil uil-github-alt"></i>
-                                        </a>
-                                        {details.liveLink != "" ?
-                                            <button className='live-btn'>
-                                                <a href={details.liveLink} target="_blank">
-                                                    live
-                                                </a>
-                                            </button>
-                                            :
+                                    <Card sx={{ maxWidth: 345, height: 350, backgroundColor: 'var(--input-color)' }} >
+                                        <CardMedia
+                                            sx={{ height: 200 }}
+                                            image={details.img}
+                                            title="Projects"
+                                        />
+                                        {!moreBtnClick[details.id] ?
                                             null
-                                        }
-                                        <button className='more-btn' onClick={() => handleClickForMoreBtn(details.id)}>
-                                            {!moreBtnClick[details.id] ? <>more..</> : <>close</>}
-                                        </button>
-                                    </span>
+                                            :
+                                            <span className='tech-stacks'>
+                                                <ol>
+                                                    {
+                                                        details['tech-stacks'].map((stack, index) =>
+                                                            (<li key={index}>{stack}</li>))
+
+                                                    }
+                                                </ol>
+                                            </span>}
+                                        <CardContent sx={{color: 'var(--title-color)'}}>
+                                            <Typography gutterBottom variant="h7" component="div">
+                                                {details.title}
+                                            </Typography>
+                                            {/* <Typography variant="body2" color="text.secondary">
+                                                Lizards are a widespread group of squamate reptiles, with over 6,000
+                                                species, ranging across all continents except Antarctica
+                                            </Typography> */}
+                                        </CardContent>
+                                        <CardActions className='clickables'>
+                                            <a href={details.githubURL} target="_blank" rel="noopener noreferrer" className="github-icon">
+                                                <i className="uil uil-github-alt"></i>
+                                            </a>
+                                            {details.liveLink != "" ?
+                                                <button className='live-btn'>
+                                                    <a href={details.liveLink} target="_blank">
+                                                        live
+                                                    </a>
+                                                </button>
+                                                :
+                                                null
+                                            }
+                                            <button className='more-btn' onClick={() => handleClickForMoreBtn(details.id)}>
+                                                {!moreBtnClick[details.id] ? <>more..</> : <>close</>}
+                                            </button>
+                                        </CardActions>
+                                    </Card>
 
                                 </motion.div>
                             ))}

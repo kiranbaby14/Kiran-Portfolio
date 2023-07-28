@@ -7,8 +7,9 @@ My personal portfolio website
   - Swiper.js
   - Email.js
 
-## Feature
+## Features
  - Ligt-Dark mode
+ - Contact via Email
 
 ## Screenshots
 ![1](https://github.com/kiranbaby14/Kiran-Portfolio/assets/50899339/959cb34d-b930-49db-b25f-cc1b57149a0a)

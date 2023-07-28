@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Kiran-Portfolio/static/css/main.c924e97a.css",
-    "main.js": "/Kiran-Portfolio/static/js/main.ba0284e4.js",
+    "main.js": "/Kiran-Portfolio/static/js/main.5a23151c.js",
     "static/media/about04.png": "/Kiran-Portfolio/static/media/about04.fa7b3a72ed32b0e25bfb.png",
     "static/media/about02.png": "/Kiran-Portfolio/static/media/about02.7a3df03410ee756268ec.png",
     "static/media/about01.png": "/Kiran-Portfolio/static/media/about01.080509de05322b7aafda.png",
@@ -17,15 +17,19 @@
     "static/media/instagram.png": "/Kiran-Portfolio/static/media/instagram.117069fa6835aff52357.png",
     "static/media/hyperface.jpg": "/Kiran-Portfolio/static/media/hyperface.f47102305c58ada53083.jpg",
     "static/media/kiran.png": "/Kiran-Portfolio/static/media/kiran.b984bbd94a8c8147053f.png",
-    "static/media/Kiran_CV.pdf": "/Kiran-Portfolio/static/media/Kiran_CV.46bbfdf0ccfaf53c0e0f.pdf",
     "static/media/androidstudio.png": "/Kiran-Portfolio/static/media/androidstudio.5d54d88aa70bc57a8a94.png",
+    "static/media/Kiran_CV.pdf": "/Kiran-Portfolio/static/media/Kiran_CV.87bd89efae6bdba6bd14.pdf",
+    "static/media/chai.png": "/Kiran-Portfolio/static/media/chai.8aee307f55a6284e5e02.png",
     "static/media/portfolio.png": "/Kiran-Portfolio/static/media/portfolio.9ac77362f85c074e20d0.png",
     "static/media/redux.png": "/Kiran-Portfolio/static/media/redux.c9be37e0fece29c624b0.png",
     "static/media/sass.png": "/Kiran-Portfolio/static/media/sass.36e863bfbcb25c109d00.png",
     "static/media/node.png": "/Kiran-Portfolio/static/media/node.8683d89cf78ffae3d1f7.png",
+    "static/media/firebase.svg": "/Kiran-Portfolio/static/media/firebase.be39887274fc1d39cbc0965e75787612.svg",
+    "static/media/ether.png": "/Kiran-Portfolio/static/media/ether.5a53cbcbf9f3ebf07689.png",
     "static/media/graphql.png": "/Kiran-Portfolio/static/media/graphql.0372057049181c5de51a.png",
     "static/media/java.png": "/Kiran-Portfolio/static/media/java.5c408eb4d13928f51c4e.png",
     "static/media/about.jpg": "/Kiran-Portfolio/static/media/about.54ebf0d86f9a58a15659.jpg",
+    "static/media/mocha.png": "/Kiran-Portfolio/static/media/mocha.b4ccc7eefddb2921f599.png",
     "static/media/mongodbatlas.png": "/Kiran-Portfolio/static/media/mongodbatlas.b42838b66ef4f5d44155.png",
     "static/media/pytorch.png": "/Kiran-Portfolio/static/media/pytorch.fdd10e7935fba1a36bb1.png",
     "static/media/solidity.png": "/Kiran-Portfolio/static/media/solidity.90127c0d937d9fade4cc.png",
@@ -44,10 +48,10 @@
     "index.html": "/Kiran-Portfolio/index.html",
     "static/media/circle.svg": "/Kiran-Portfolio/static/media/circle.134eeeb1e58895b892195fe8ed63bc9f.svg",
     "main.c924e97a.css.map": "/Kiran-Portfolio/static/css/main.c924e97a.css.map",
-    "main.ba0284e4.js.map": "/Kiran-Portfolio/static/js/main.ba0284e4.js.map"
+    "main.5a23151c.js.map": "/Kiran-Portfolio/static/js/main.5a23151c.js.map"
   },
   "entrypoints": [
     "static/css/main.c924e97a.css",
-    "static/js/main.ba0284e4.js"
+    "static/js/main.5a23151c.js"
   ]
 }

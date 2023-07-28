@@ -29,6 +29,11 @@ import tensorflow from '../assets/images/tensorflow.png';
 import unity from '../assets/images/unity.svg';
 import csharp from '../assets/images/csharp.svg';
 import androidstudio from '../assets/images/androidstudio.png';
+import firebase from '../assets/images/firebase.svg';
+import hardhat from '../assets/images/hardhat.png';
+import mocha from '../assets/images/mocha.png';
+import chai from '../assets/images/chai.png';
+import ether from '../assets/images/ether.png';
 
 import about01 from '../assets/images/about01.png';
 import about02 from '../assets/images/about02.png';
@@ -83,6 +88,11 @@ export default {
   unity,
   csharp,
   androidstudio,
+  firebase,
+  hardhat,
+  mocha,
+  chai,
+  ether,
 
   about01,
   about02,

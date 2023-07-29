@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/Kiran-Portfolio/static/css/main.c924e97a.css",
-    "main.js": "/Kiran-Portfolio/static/js/main.5a23151c.js",
-    "static/media/about04.png": "/Kiran-Portfolio/static/media/about04.fa7b3a72ed32b0e25bfb.png",
+    "main.css": "/Kiran-Portfolio/static/css/main.cfe90b16.css",
+    "main.js": "/Kiran-Portfolio/static/js/main.25695a77.js",
+    "static/media/defaultImg.png": "/Kiran-Portfolio/static/media/defaultImg.fa7b3a72ed32b0e25bfb.png",
     "static/media/about02.png": "/Kiran-Portfolio/static/media/about02.7a3df03410ee756268ec.png",
-    "static/media/about01.png": "/Kiran-Portfolio/static/media/about01.080509de05322b7aafda.png",
     "static/media/travelAdvisor.png": "/Kiran-Portfolio/static/media/travelAdvisor.a7918d3db728174f2d70.png",
     "static/media/ultrarun.png": "/Kiran-Portfolio/static/media/ultrarun.72dfcb59fcfc1ad5879c.png",
     "static/media/web_dev.jpg": "/Kiran-Portfolio/static/media/web_dev.3cd9be87b73d12843528.jpg",
     "static/media/game_dev.jpg": "/Kiran-Portfolio/static/media/game_dev.af355ef3a38cf63d633b.jpg",
     "static/media/spheron.png": "/Kiran-Portfolio/static/media/spheron.24910297e8fdeb0da18d.png",
-    "static/media/about03.png": "/Kiran-Portfolio/static/media/about03.c26c2547bb1a423cf283.png",
+    "static/media/bookurtrip.png": "/Kiran-Portfolio/static/media/bookurtrip.a3e625a915b8165d910d.png",
     "static/media/ml.jpg": "/Kiran-Portfolio/static/media/ml.16c4674271368b61523c.jpg",
+    "static/media/bdrive.png": "/Kiran-Portfolio/static/media/bdrive.cfd67b7f9a27daae1f6a.png",
     "static/media/ninjesk.png": "/Kiran-Portfolio/static/media/ninjesk.bb7cee717a2a1c47d194.png",
     "static/media/blockchain.jpg": "/Kiran-Portfolio/static/media/blockchain.cfeda6e0ed2df2905b10.jpg",
     "static/media/instagram.png": "/Kiran-Portfolio/static/media/instagram.117069fa6835aff52357.png",
     "static/media/hyperface.jpg": "/Kiran-Portfolio/static/media/hyperface.f47102305c58ada53083.jpg",
     "static/media/kiran.png": "/Kiran-Portfolio/static/media/kiran.b984bbd94a8c8147053f.png",
+    "static/media/emailservice.png": "/Kiran-Portfolio/static/media/emailservice.e2055ce977786ffb1295.png",
     "static/media/androidstudio.png": "/Kiran-Portfolio/static/media/androidstudio.5d54d88aa70bc57a8a94.png",
-    "static/media/Kiran_CV.pdf": "/Kiran-Portfolio/static/media/Kiran_CV.87bd89efae6bdba6bd14.pdf",
+    "static/media/Kiran_CV.pdf": "/Kiran-Portfolio/static/media/Kiran_CV.f5f2c9986ecc94fed5cf.pdf",
     "static/media/chai.png": "/Kiran-Portfolio/static/media/chai.8aee307f55a6284e5e02.png",
-    "static/media/portfolio.png": "/Kiran-Portfolio/static/media/portfolio.9ac77362f85c074e20d0.png",
+    "static/media/portfolio.png": "/Kiran-Portfolio/static/media/portfolio.12036e5042586f457b0c.png",
     "static/media/redux.png": "/Kiran-Portfolio/static/media/redux.c9be37e0fece29c624b0.png",
     "static/media/sass.png": "/Kiran-Portfolio/static/media/sass.36e863bfbcb25c109d00.png",
     "static/media/node.png": "/Kiran-Portfolio/static/media/node.8683d89cf78ffae3d1f7.png",
@@ -47,11 +48,11 @@
     "static/media/django.svg": "/Kiran-Portfolio/static/media/django.126ddbed662f18d4e059204da06e2af2.svg",
     "index.html": "/Kiran-Portfolio/index.html",
     "static/media/circle.svg": "/Kiran-Portfolio/static/media/circle.134eeeb1e58895b892195fe8ed63bc9f.svg",
-    "main.c924e97a.css.map": "/Kiran-Portfolio/static/css/main.c924e97a.css.map",
-    "main.5a23151c.js.map": "/Kiran-Portfolio/static/js/main.5a23151c.js.map"
+    "main.cfe90b16.css.map": "/Kiran-Portfolio/static/css/main.cfe90b16.css.map",
+    "main.25695a77.js.map": "/Kiran-Portfolio/static/js/main.25695a77.js.map"
   },
   "entrypoints": [
-    "static/css/main.c924e97a.css",
-    "static/js/main.5a23151c.js"
+    "static/css/main.cfe90b16.css",
+    "static/js/main.25695a77.js"
   ]
 }

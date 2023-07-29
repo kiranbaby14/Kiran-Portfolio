@@ -34,11 +34,12 @@ import hardhat from '../assets/images/hardhat.png';
 import mocha from '../assets/images/mocha.png';
 import chai from '../assets/images/chai.png';
 import ether from '../assets/images/ether.png';
+import bdrive from '../assets/images/bdrive.png';
+import bookurtrip from '../assets/images/bookurtrip.png';
+import emailservice from '../assets/images/emailservice.png';
 
-import about01 from '../assets/images/about01.png';
 import about02 from '../assets/images/about02.png';
-import about03 from '../assets/images/about03.png';
-import about04 from '../assets/images/about04.png';
+import defaultImg from '../assets/images/defaultImg.png';
 
 import circle from '../assets/images/circle.svg';
 
@@ -93,11 +94,12 @@ export default {
   mocha,
   chai,
   ether,
+  bdrive,
+  bookurtrip,
+  emailservice,
 
-  about01,
   about02,
-  about03,
-  about04,
+  defaultImg,
   circle,
 
   webdeveloper,

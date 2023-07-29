@@ -16,18 +16,19 @@ const Portfolio = () => {
     const portfolioDetails = [
         {
             "title": "Classification and Analysis of GAP programming practices on GitHub",
+            "desc": "(Repo will be made public after Aug 17th)",
             "githubURL": "https://github.com/kiranbaby14/Analysis-of-GAP-programming-practices-on-GitHub",
-            "liveLink": "", "img": images.about04, _id: [0, 1],
+            "liveLink": "", "img": images.defaultImg, _id: [0, 1],
             id: 1,
             "tech-stacks": ["PyTorch", "scikit-learn", "GitHub-Actions", "Docker", "React", "Django", "Redux", "Google-Cloud"]
         },
-        { "title": "ML Implemented Mailing Service ", "githubURL": "https://github.com/kiranbaby14/ML-Implemented-Mailing-Service", "liveLink": "", "img": images.about04, _id: [0, 1], id: 2, "tech-stacks": ["scikit-learn", "Docker", "React", "Django", "Redux", "Google-Cloud", "Celery", "JWT", "Google/Fb OAuth"] },
+        { "title": "ML Implemented Mailing Service ", "githubURL": "https://github.com/kiranbaby14/ML-Implemented-Mailing-Service", "liveLink": "", "img": images.emailservice, _id: [0, 1], id: 2, "tech-stacks": ["scikit-learn", "Docker", "React", "Django", "Redux", "Google-Cloud", "Celery", "JWT", "Google/Fb OAuth"] },
         { "title": "Travel-Advisor ", "githubURL": "https://github.com/kiranbaby14/Travel-Advisor", "liveLink": "", "img": images.travelAdvisor, _id: [0], id: 8, "tech-stacks": ["React", "RapidAPI", "Google Maps API", "Material UI"] },
-        { "title": "BookUrTrip Clone", "githubURL": "https://github.com/kiranbaby14/BookUrTrip", "liveLink": "", "img": images.about04, _id: [0], id: 4, "tech-stacks": ["React", "Node.js", "MongoDB", "Express", "Context API"] },
+        { "title": "BookUrTrip Clone", "githubURL": "https://github.com/kiranbaby14/BookUrTrip", "liveLink": "", "img": images.bookurtrip, _id: [0], id: 4, "tech-stacks": ["React", "Node.js", "MongoDB", "Express", "Context API"] },
         { "title": "UltraRun Marathon", "githubURL": "https://github.com/kiranbaby14/Marathon", "liveLink": "https://www.universityultrarun.com/", "img": images.ultrarun, _id: [0], id: 3, "tech-stacks": ["React", "Leaflet.js", "Google Maps API", "Context API"] },
-        { "title": "B-Drive", "githubURL": "https://github.com/kiranbaby14/B-Drive", "liveLink": "", "img": images.about04, _id: [0, 3], id: 5, "tech-stacks": ["React", "Ethereum Blockchain", "Hardhat", "Ether.js"] },
-        { "title": "Online Store", "githubURL": "https://github.com/kiranbaby14/Online-Store-Frontend", "liveLink": "", "img": images.about04, _id: [0], id: 7, "tech-stacks": ["React", "mongoDB", "Node.js", "Express", "Redux"] },
-        { "title": "Online Store-Admin-Panel", "githubURL": "https://github.com/kiranbaby14/Online-Store-Admin-Panel", "liveLink": "", "img": images.about04, _id: [0], id: 6, "tech-stacks": ["React", "mongoDB", "Node.js", "Express", "Redux"] },
+        { "title": "B-Drive", "githubURL": "https://github.com/kiranbaby14/B-Drive", "liveLink": "", "img": images.bdrive, _id: [0, 3], id: 5, "tech-stacks": ["React", "Ethereum Blockchain", "Hardhat", "Ether.js"] },
+        { "title": "Online Store", "githubURL": "https://github.com/kiranbaby14/Online-Store-Frontend", "liveLink": "", "img": images.defaultImg, _id: [0], id: 7, "tech-stacks": ["React", "mongoDB", "Node.js", "Express", "Redux"] },
+        { "title": "Online Store-Admin-Panel", "githubURL": "https://github.com/kiranbaby14/Online-Store-Admin-Panel", "liveLink": "", "img": images.defaultImg, _id: [0], id: 6, "tech-stacks": ["React", "mongoDB", "Node.js", "Express", "Redux"] },
         { "title": "Portfolio Website", "githubURL": "https://github.com/kiranbaby14/Kiran-Portfolio", "liveLink": "", "img": images.portfolio, _id: [0], id: 13, "tech-stacks": ["React", "Material UI", "Framer-motion", "Email.js", "Three.js", "Swiper.js"] },
         { "title": "Hyperface-Implemented-Multiplayer-TPS-Game", "githubURL": "https://github.com/kiranbaby14/Hyperface-Implemented-Multiplayer-TPS-Game", "liveLink": "", "img": images.hyperface, _id: [1, 2], id: 10, "tech-stacks": ["OpenCV", "Scikit-learn", "Photon server", "Unity", "C#"] },
         { "title": "Ninjesk-The-endless-runner-ninja ", "githubURL": "https://github.com/kiranbaby14/Ninjesk-The-endless-runner-ninja", "liveLink": "https://drive.google.com/file/d/1Tda2icc4q8GaztYYozKkiT0jwJUr_HqE/view?usp=sharing", "img": images.ninjesk, _id: [2], id: 9, "tech-stacks": ["Unity", "C#", "Google-Admob"] },
@@ -75,7 +76,7 @@ const Portfolio = () => {
                             </button>
                         ))}
                     </div>
-
+                    
                     <div className='image_container'>
                         <AnimatePresence>
                             {filteredPortfolio.map((details) => (
@@ -86,7 +87,7 @@ const Portfolio = () => {
                                     exit={{ opacity: 0 }}
                                     transition={{ duration: 0.5 }}
                                 >
-                                    <Card sx={{ maxWidth: 345, height: 350, backgroundColor: 'var(--input-color)' }} >
+                                    <Card sx={{ width: 'inherit', height: 350, backgroundColor: 'var(--input-color)' }} >
                                         <CardMedia
                                             sx={{ height: 200 }}
                                             image={details.img}
@@ -108,10 +109,11 @@ const Portfolio = () => {
                                             <Typography gutterBottom variant="h7" component="div">
                                                 {details.title}
                                             </Typography>
-                                            {/* <Typography variant="body2" color="text.secondary">
-                                                Lizards are a widespread group of squamate reptiles, with over 6,000
-                                                species, ranging across all continents except Antarctica
-                                            </Typography> */}
+                                            
+                                            {details.desc ? <Typography variant="body2" color="var(--title-color)">
+                                                {details.desc}
+                                            </Typography> : null}
+                                            
                                         </CardContent>
                                         <CardActions className='clickables'>
                                             <a href={details.githubURL} target="_blank" rel="noopener noreferrer" className="github-icon">

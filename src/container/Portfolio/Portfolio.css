@@ -51,9 +51,19 @@
     color: white;
 }
 
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+  }
+
 .image_container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(19.5rem, 1fr));
     gap: 1rem;
     margin-top: 2rem;
 }
@@ -111,4 +121,3 @@
 .more-btn:hover{
     color: var(--first-color);
 }
-

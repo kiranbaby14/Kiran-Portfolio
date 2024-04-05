@@ -5,6 +5,7 @@
 .qualification_tabs{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap ;
     margin-bottom: var(--mb-2);
 }
 

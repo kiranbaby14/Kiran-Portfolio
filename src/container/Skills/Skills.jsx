@@ -16,12 +16,12 @@ const Skills = () => {
     const [skillName, setSkillName] = useState('');
 
     const skills = {
-        "ML/DL": [{ name: "PyTorch", icon: images.pytorch }, { name: "Tensorflow", icon: images.tensorflow }, { name: "Numpy", icon: images.numpy }, { name: "Pandas", icon: images.pandas }],
-        "Frontend": [{ name: "HTML", icon: images.html }, { name: "CSS", icon: images.css }, { name: "JavaScript", icon: images.javascript }, { name: "React", icon: images.react }, { name: "Redux", icon: images.redux }],
-        "Backend": [{ name: "Django", icon: images.django }, { name: "Node", icon: images.node }, { name: "MongoDB", icon: images.mongodb }, { name: "Express", icon: images.express }, { name: "Firebase", icon: images.firebase }],
-        "Programming Languages": [{ name: "Python", icon: images.python }, { name: "Java", icon: images.java }, { name: "JavaScript", icon: images.javascript }, { name: "Solidity", icon: images.solidity }, { name: "C#", icon: images.csharp }],
-        "Tools": [{ name: "Git", icon: images.git }, { name: "GitHub", icon: images.github }, { name: "GitHubActions", icon: images.githubactions }, { name: "Docker", icon: images.docker },  { name: "Postman", icon: images.postman }],
-        "Softwares": [{ name: "Unity", icon: images.unity }, { name: "AndroidStudio", icon: images.androidstudio }, { name: "MongoDBAtlas", icon: images.mongodbatlas }],
+        "ML/DL": [{ name: "PyTorch", icon: images.pytorch }, { name: "Tensorflow", icon: images.tensorflow }, { name: "Scikit-learn", icon: images.scikit_learn }, { name: "Numpy", icon: images.numpy }, { name: "Pandas", icon: images.pandas }],
+        "Version Controls/Containerization": [{ name: "Git", icon: images.git }, { name: "GitHub", icon: images.github }, { name: "GitHubActions", icon: images.githubactions }, { name: "Docker", icon: images.docker }, { name: "Kubernetes", icon: images.kubernetes }],
+        "Programming Languages": [{ name: "Python", icon: images.python }, { name: "TypeScript", icon: images.typeScript }, { name: "Java", icon: images.java }, { name: "JavaScript", icon: images.javascript }, { name: "Solidity", icon: images.solidity }, { name: "C#", icon: images.csharp }],
+        "Frontend": [{ name: "HTML", icon: images.html }, { name: "CSS", icon: images.css }, { name: "JavaScript", icon: images.javascript }, { name: "React", icon: images.react }, { name: "Vue", icon: images.vue }, { name: "Redux", icon: images.redux }],
+        "Backend": [{ name: "Django", icon: images.django }, { name: "Node", icon: images.node }, { name: "NestJS", icon: images.nestjs }, { name: "Express", icon: images.express }, { name: "MongoDB", icon: images.mongodb }, { name: "Firebase", icon: images.firebase }],
+        "Softwares": [{ name: "Unity", icon: images.unity }, { name: "AndroidStudio", icon: images.androidstudio }, , { name: "Postman", icon: images.postman }],
         "BlockChain": [{ name: "HardHat", icon: images.hardhat }, { name: "Mocha", icon: images.mocha }, { name: "Chai", icon: images.chai }, { name: "Ether.js", icon: images.ether }]
 
     };

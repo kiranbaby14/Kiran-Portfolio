@@ -41,21 +41,21 @@ const About = () => {
                                 className="mySwiper"
                             >
                                 <SwiperSlide>
+                                    <img src={images.webdeveloper} style={{ width: "100%", height: "300px", objectFit: 'cover' }} alt='img1' />
+                                    <div className="overlay"></div>
+                                    <span className='swiper_slide_text'>
+                                        <h1>Software Developer</h1>
+                                        <p>Working as a software developer in a fast-paced startup, I've built AI-powered applications such as a product recommendation chatbot using LangChain and OpenAI, along with web applications utilizing Vue.js, NestJS, PostgreSQL, and Docker.</p>
+                                    </span>
+                                </SwiperSlide>
+                                <SwiperSlide>
                                     <img src={images.machinelearning} style={{ width: "100%", height: "300px", objectFit: 'cover' }} alt='img1' />
                                     <div className="overlay"></div>
                                     <span className='swiper_slide_text'>
                                         <h1>AI Student</h1>
-                                        <p>Pursuing MSc in AI at University of St Andrews.<br/> <br/>Have knowldege in machine learning, deep learning and expertise with related frameworks like pytorch and tensorflow</p>
+                                        <p>Pursuing MSc in AI at University of St Andrews.<br /> <br />Have knowldege in machine learning, deep learning and expertise with related frameworks like pytorch and tensorflow</p>
                                     </span>
 
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <img src={images.webdeveloper} style={{ width: "100%", height: "300px", objectFit: 'cover' }} alt='img1' />
-                                    <div className="overlay"></div>
-                                    <span className='swiper_slide_text'>
-                                        <h1>Full Stack Dev</h1>
-                                        <p>Have expertise in developing full-stack applications using the MERN stack, which combines MongoDB, Express.js, React, and Node.js, as well as the Django framework.</p>
-                                    </span>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <img src={images.gamedeveloper} style={{ width: "100%", height: "300px", objectFit: 'cover' }} alt='img1' />

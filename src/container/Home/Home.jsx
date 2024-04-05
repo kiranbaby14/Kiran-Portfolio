@@ -93,7 +93,7 @@ const Home = () => {
                                     // startDelay={1000}
                                     cursorColor="#3F3D56"
                                     multiText={[
-                                        'MERN stack developer',
+                                        'Software developer',
                                         'Unity game Developer',
                                         'Web3 enthusiast',
                                         'AI student'
@@ -102,7 +102,7 @@ const Home = () => {
                                     typeSpeed={30}
                                     multiTextLoop
                                 />
-                                <p className="home_description">enthusiastic student dedicated to exploring and mastering the realms of web development, 
+                                <p className="home_description">Software developer dedicated to exploring and mastering the realms of web development, 
                                 game development, Artificial Intelligence, and Machine Learning, fueled by an unwavering passion for learning and growth.
                                 </p>
 

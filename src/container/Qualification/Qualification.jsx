@@ -6,12 +6,17 @@ const Qualification = () => {
         <>
             {/* <!--==================== QUALIFICATION ====================--> */}
             <section className="qualification section smooth_transition" id='qualification'>
-                <h2 className="section_title">Qualification</h2>
+                <h2 className="section_title">JOURNEY</h2>
                 <span className="section_subtitle">my personal journey</span>
 
                 <div className="qualification_container container">
                     <div className="qualification_tabs">
-                        <div className="qualification_button button-flex qualification_active" data-target="#education">
+
+                        <div className="qualification_button button-flex qualification_active" data-target="#experience">
+                            <i className="uil uil-suitcase qualification_icon"></i>
+                            Experience
+                        </div>
+                        <div className="qualification_button button-flex" data-target="#education">
                             <i className="uil uil-graduation-cap qualification_icon"></i>
                             Education
                         </div>
@@ -24,9 +29,49 @@ const Qualification = () => {
                     </div>
 
                     <div className="qualification_sections">
-                        {/* <!--==================== QUALIFICATION CONTENT 1====================--> */}
-                        <div className="qualification_content qualification_active" data-content id="education">
-                            {/* <!--==================== QUALIFICATION 1====================--> */}
+                        {/* <!--==================== EXPERIENCE ====================--> */}
+                        <div className="qualification_content qualification_active" data-content id="experience">
+                            {/* <!--==================== EXPERIENCE 1====================--> */}
+                            <div className="qualification_data">
+                                <div>
+                                    <h3 className="qualification_title">Software Developer</h3>
+                                    <span className="qualification_subtitle">Westland Technologies</span>
+                                    <div className="qualification_calender">
+                                        <i className="uil uil-calendar-alt"></i>
+                                        OCT, 2023 - present
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span className="qualification_rounder"></span>
+                                    <span className="qualification_line"></span>
+                                </div>
+                            </div>
+
+
+                            {/* <!--==================== EXPERIENCE 2====================--> */}
+                            <div className="qualification_data">
+
+                                <div></div>
+
+                                <div>
+                                    <span className="qualification_rounder"></span>
+                                </div>
+
+                                <div>
+                                    <h3 className="qualification_title">Web Developer</h3>
+                                    <span className="qualification_subtitle">University ultra run marathon</span>
+                                    <div className="qualification_calender">
+                                        <i className="uil uil-calendar-alt"></i>
+                                        JAN, 2023
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* <!--==================== EDUCATION ====================--> */}
+                        <div className="qualification_content" data-content id="education">
+                            {/* <!--==================== EDUCATION 1====================--> */}
                             <div className="qualification_data">
                                 <div>
                                     <h3 className="qualification_title">MSc in AI</h3>
@@ -44,7 +89,7 @@ const Qualification = () => {
                             </div>
 
 
-                            {/* <!--==================== QUALIFICATION 2====================--> */}
+                            {/* <!--==================== EDUCATION 2====================--> */}
                             <div className="qualification_data">
 
                                 <div></div>
@@ -65,7 +110,7 @@ const Qualification = () => {
                             </div>
 
 
-                            {/* <!--==================== QUALIFICATION 3====================--> */}
+                            {/* <!--==================== EDUCATION 3====================--> */}
                             <div className="qualification_data">
                                 <div>
                                     <h3 className="qualification_title">Computer Science</h3>
@@ -85,9 +130,9 @@ const Qualification = () => {
 
 
 
-                        {/* <!--==================== QUALIFICATION CONTENT 2====================--> */}
+                        {/* <!--==================== AWARDS ====================--> */}
                         <div className="qualification_content" data-content id="awards" >
-                            {/* <!--==================== QUALIFICATION 1====================--> */}
+                            {/* <!--==================== AWARD 1====================--> */}
                             <div className="qualification_data">
 
                                 <div></div>
@@ -109,7 +154,7 @@ const Qualification = () => {
                             </div>
 
 
-                            {/* <!--==================== QUALIFICATION 2====================--> */}
+                            {/* <!--==================== AWARD 2====================--> */}
                             <div className="qualification_data">
 
 
@@ -129,7 +174,7 @@ const Qualification = () => {
                             </div>
 
 
-                            {/* <!--==================== QUALIFICATION 3====================--> */}
+                            {/* <!--==================== AWARD 3====================--> */}
                             <div className="qualification_data">
 
                                 <div></div>
@@ -150,7 +195,7 @@ const Qualification = () => {
 
                             </div>
 
-                            {/* <!--==================== QUALIFICATION 3====================--> */}
+                            {/* <!--==================== AWARD 4====================--> */}
                             <div className="qualification_data">
 
 

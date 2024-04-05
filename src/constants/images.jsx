@@ -7,13 +7,17 @@ import javascript from '../assets/images/javascript.png';
 import mu5 from '../assets/images/mu5.png';
 import node from '../assets/images/node.png';
 import python from '../assets/images/python.png';
+import typeScript from '../assets/images/typeScript.svg';
+import scikit_learn from '../assets/images/scikit_learn.png';
 import react from '../assets/images/react.png';
 import redux from '../assets/images/redux.png';
 import sass from '../assets/images/sass.png';
 import typescript from '../assets/images/typescript.png';
 import vue from '../assets/images/vue.png';
 import django from '../assets/images/django.svg';
+import nestjs from '../assets/images/nestjs.svg';
 import docker from '../assets/images/docker.svg';
+import kubernetes from '../assets/images/kubernetes.svg';
 import express from '../assets/images/express.svg';
 import github from '../assets/images/github.svg';
 import githubactions from '../assets/images/githubactions.svg';
@@ -67,13 +71,16 @@ export default {
   mu5,
   node,
   python,
+  typeScript,
   react,
   redux,
   sass,
   typescript,
   vue,
   django,
+  nestjs,
   docker,
+  kubernetes,
   express,
   github,
   githubactions,
@@ -84,6 +91,7 @@ export default {
   pandas,
   postman,
   pytorch,
+  scikit_learn,
   solidity,
   tensorflow,
   unity,

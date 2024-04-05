@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Kiran-Portfolio/static/css/main.cfe90b16.css",
-    "main.js": "/Kiran-Portfolio/static/js/main.bb930793.js",
+    "main.css": "/Kiran-Portfolio/static/css/main.f7bf8eab.css",
+    "main.js": "/Kiran-Portfolio/static/js/main.c7bccefd.js",
     "static/media/defaultImg.png": "/Kiran-Portfolio/static/media/defaultImg.fa7b3a72ed32b0e25bfb.png",
     "static/media/about02.png": "/Kiran-Portfolio/static/media/about02.7a3df03410ee756268ec.png",
     "static/media/travelAdvisor.png": "/Kiran-Portfolio/static/media/travelAdvisor.a7918d3db728174f2d70.png",
@@ -19,7 +19,7 @@
     "static/media/kiran.png": "/Kiran-Portfolio/static/media/kiran.b984bbd94a8c8147053f.png",
     "static/media/emailservice.png": "/Kiran-Portfolio/static/media/emailservice.e2055ce977786ffb1295.png",
     "static/media/androidstudio.png": "/Kiran-Portfolio/static/media/androidstudio.5d54d88aa70bc57a8a94.png",
-    "static/media/Kiran_CV.pdf": "/Kiran-Portfolio/static/media/Kiran_CV.50b2f46471a9d0e9d04e.pdf",
+    "static/media/Kiran_CV.pdf": "/Kiran-Portfolio/static/media/Kiran_CV.40f765d6911ef62024aa.pdf",
     "static/media/chai.png": "/Kiran-Portfolio/static/media/chai.8aee307f55a6284e5e02.png",
     "static/media/portfolio.png": "/Kiran-Portfolio/static/media/portfolio.12036e5042586f457b0c.png",
     "static/media/redux.png": "/Kiran-Portfolio/static/media/redux.c9be37e0fece29c624b0.png",
@@ -48,11 +48,11 @@
     "static/media/django.svg": "/Kiran-Portfolio/static/media/django.126ddbed662f18d4e059204da06e2af2.svg",
     "index.html": "/Kiran-Portfolio/index.html",
     "static/media/circle.svg": "/Kiran-Portfolio/static/media/circle.134eeeb1e58895b892195fe8ed63bc9f.svg",
-    "main.cfe90b16.css.map": "/Kiran-Portfolio/static/css/main.cfe90b16.css.map",
-    "main.bb930793.js.map": "/Kiran-Portfolio/static/js/main.bb930793.js.map"
+    "main.f7bf8eab.css.map": "/Kiran-Portfolio/static/css/main.f7bf8eab.css.map",
+    "main.c7bccefd.js.map": "/Kiran-Portfolio/static/js/main.c7bccefd.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfe90b16.css",
-    "static/js/main.bb930793.js"
+    "static/css/main.f7bf8eab.css",
+    "static/js/main.c7bccefd.js"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Kiran-Portfolio/static/css/main.ccc39c45.css",
+    "main.css": "/Kiran-Portfolio/static/css/main.bce2528a.css",
     "main.js": "/Kiran-Portfolio/static/js/main.7c6b80ae.js",
     "static/media/defaultImg.png": "/Kiran-Portfolio/static/media/defaultImg.fa7b3a72ed32b0e25bfb.png",
     "static/media/about02.png": "/Kiran-Portfolio/static/media/about02.7a3df03410ee756268ec.png",
@@ -52,11 +52,11 @@
     "static/media/django.svg": "/Kiran-Portfolio/static/media/django.126ddbed662f18d4e059204da06e2af2.svg",
     "index.html": "/Kiran-Portfolio/index.html",
     "static/media/circle.svg": "/Kiran-Portfolio/static/media/circle.ae5f84b3853b9e34aa83cf8dada715c5.svg",
-    "main.ccc39c45.css.map": "/Kiran-Portfolio/static/css/main.ccc39c45.css.map",
+    "main.bce2528a.css.map": "/Kiran-Portfolio/static/css/main.bce2528a.css.map",
     "main.7c6b80ae.js.map": "/Kiran-Portfolio/static/js/main.7c6b80ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.ccc39c45.css",
+    "static/css/main.bce2528a.css",
     "static/js/main.7c6b80ae.js"
   ]
 }

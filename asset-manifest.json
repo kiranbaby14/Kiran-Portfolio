@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Kiran-Portfolio/static/css/main.f7bf8eab.css",
-    "main.js": "/Kiran-Portfolio/static/js/main.f16720d7.js",
+    "main.css": "/Kiran-Portfolio/static/css/main.ccc39c45.css",
+    "main.js": "/Kiran-Portfolio/static/js/main.7c6b80ae.js",
     "static/media/defaultImg.png": "/Kiran-Portfolio/static/media/defaultImg.fa7b3a72ed32b0e25bfb.png",
     "static/media/about02.png": "/Kiran-Portfolio/static/media/about02.7a3df03410ee756268ec.png",
     "static/media/travelAdvisor.png": "/Kiran-Portfolio/static/media/travelAdvisor.a7918d3db728174f2d70.png",
@@ -51,12 +51,12 @@
     "static/media/docker.svg": "/Kiran-Portfolio/static/media/docker.f99b96943df37cd4112b8f13839b7eaf.svg",
     "static/media/django.svg": "/Kiran-Portfolio/static/media/django.126ddbed662f18d4e059204da06e2af2.svg",
     "index.html": "/Kiran-Portfolio/index.html",
-    "static/media/circle.svg": "/Kiran-Portfolio/static/media/circle.134eeeb1e58895b892195fe8ed63bc9f.svg",
-    "main.f7bf8eab.css.map": "/Kiran-Portfolio/static/css/main.f7bf8eab.css.map",
-    "main.f16720d7.js.map": "/Kiran-Portfolio/static/js/main.f16720d7.js.map"
+    "static/media/circle.svg": "/Kiran-Portfolio/static/media/circle.ae5f84b3853b9e34aa83cf8dada715c5.svg",
+    "main.ccc39c45.css.map": "/Kiran-Portfolio/static/css/main.ccc39c45.css.map",
+    "main.7c6b80ae.js.map": "/Kiran-Portfolio/static/js/main.7c6b80ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7bf8eab.css",
-    "static/js/main.f16720d7.js"
+    "static/css/main.ccc39c45.css",
+    "static/js/main.7c6b80ae.js"
   ]
 }

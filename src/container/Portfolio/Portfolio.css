@@ -2,122 +2,241 @@
     background-color: var(--body-color);
 }
 
-#portfolio .tech-stacks{
+/* ============ CARD STYLES ============ */
+.image_card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.image_card .MuiCard-root {
+    background: var(--container-color);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+}
+
+.dark-theme .image_card .MuiCard-root {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+}
+
+.image_card .MuiCard-root:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border-color: var(--first-color);
+}
+
+.dark-theme .image_card .MuiCard-root:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Image container with overlay gradient */
+.image_card .MuiCardMedia-root {
+    position: relative;
+    transition: transform 0.5s ease;
+}
+
+.image_card .MuiCard-root:hover .MuiCardMedia-root {
+    transform: scale(1.05);
+}
+
+/* Tech stacks overlay - redesigned */
+#portfolio .tech-stacks {
     position: absolute;
     top: 0;
-    bottom: 0;
+    left: 0;
     width: 100%;
-    height: calc(100% - 150px);
-    display: flex;
-    padding: 10px;
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-#portfolio .tech-stacks ol{
-    position: relative;
-    top: 10px;
-    list-style: disc;
-    list-style-position: inside;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-size: 1rem;
-    gap: 4px; 
-    color: white;
-    /* text-shadow: 2px 2px black; */
-}
-
-
-.button_wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    /* margin-top: 4rem; */
-}
-
-.button_wrapper>button {
-    height: 2rem;
-    padding: 0 1rem;
-    cursor: pointer;
-    border: none;
-    border-radius: 10%;
-}
-
-.button_wrapper>button.active {
-    background-color: var(--first-color);
-    color: white;
-}
-
-.flex-container {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: yellow;
-  }
-
-.image_container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(19.5rem, 1fr));
-    gap: 1rem;
-    margin-top: 2rem;
+    padding: 20px;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0.85) 0%,
+        rgba(0, 0, 0, 0.7) 100%
+    );
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    opacity: 0;
+    transition: all 0.3s ease;
 }
 
-.image_container > .image_card {
-    /* color: white; */
-    position: relative;
-    /* height: 21rem; */
+#portfolio .image_card:hover .tech-stacks {
+    opacity: 1;
 }
 
+#portfolio .tech-stacks ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
 
-.image_card .clickables {
-    gap: 15px;
+#portfolio .tech-stacks ul li {
+    background: linear-gradient(
+        135deg,
+        var(--first-color) 0%,
+        var(--first-color-alt) 100%
+    );
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#portfolio .tech-stacks ol li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Card content area */
+.image_card .MuiCardContent-root {
+    padding: 16px 20px 8px;
+    background: var(--container-color);
+}
+
+.image_card .MuiTypography-root {
+    color: var(--title-color);
+    font-family: var(--body-font);
+}
+
+.image_card .MuiTypography-h7 {
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.image_card .MuiTypography-body2 {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-top: 4px;
+}
+
+/* Card actions - redesigned buttons */
+.image_card .MuiCardActions-root {
+    padding: 12px 20px 20px;
+    background: var(--container-color);
+    gap: 12px;
 }
 
 .github-icon {
-    font-size: 1.25rem;
-    color: var(--first-color-alt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--input-color);
+    color: var(--title-color);
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
 }
 
 .github-icon:hover {
-    color: var(--first-color);
+    background: var(--first-color);
+    color: white;
+    transform: rotate(360deg);
 }
 
 .live-btn {
-    background-color: transparent;
-    border-color: var(--first-color);
-    /* border: none; */
-    padding: 5px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    background: linear-gradient(
+        135deg,
+        var(--first-color) 0%,
+        var(--first-color-alt) 100%
+    );
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
     cursor: pointer;
-    border-radius: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.live-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .live-btn a {
     text-decoration: none;
-    color: var(--first-color-alt);
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 500;
 }
 
-.live-btn a:hover{
-    color: var(--first-color);
+/* ============ FILTER BUTTONS ============ */
+.button_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
 }
 
-.more-btn {
-    background-color: transparent;
-    /* border: none; */
-    padding: 2px;
-    border-color: var(--first-color-alt);
-    color: var(--first-color-alt);
+.button_wrapper > button {
+    padding: 0.5rem 1.25rem;
     cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    font-family: var(--body-font);
+    background: var(--input-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
 }
 
-.more-btn:hover{
-    color: var(--first-color);
+.button_wrapper > button:hover {
+    background: var(--first-color-lighter);
+    color: var(--first-color-alt);
+}
+
+.button_wrapper > button.active {
+    background: linear-gradient(
+        135deg,
+        var(--first-color) 0%,
+        var(--first-color-alt) 100%
+    );
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ============ GRID LAYOUT ============ */
+.image_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(19.5rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.image_container > .image_card {
+    position: relative;
+}
+
+/* ============ RESPONSIVE ============ */
+@media screen and (max-width: 480px) {
+    .image_container {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+    
+    #portfolio .tech-stacks ul li {
+        font-size: 0.7rem;
+        padding: 5px 10px;
+    }
 }

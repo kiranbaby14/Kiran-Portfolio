@@ -9,8 +9,6 @@ import Typography from '@mui/material/Typography';
 import "./Portfolio.css";
 
 const Portfolio = () => {
-
-
     const [tabActive, setTabActive] = useState(0);
 
     const portfolioDetails = [
@@ -36,10 +34,7 @@ const Portfolio = () => {
         { "title": "Instagram-Clone ", "githubURL": "https://github.com/kiranbaby14/Spheron-The-Ball-Game", "liveLink": "", "img": images.instagram, _id: [4], id: 12, "tech-stacks": ["AndroidStudio", "Kotlin"] },
     ]
 
-    const [moreBtnClick, setMoreBtnClick] = useState(Array(portfolioDetails.length).fill(false));
-
     const [filteredPortfolio, setFilteredPortfolio] = useState(portfolioDetails.filter((data) => data._id.includes(0)))
-
 
     const areas = ["Web Dev", "ML/AI", "Game Dev", "BlockChain", "AndroidStudio"]
 
@@ -47,21 +42,10 @@ const Portfolio = () => {
         setTabActive(id);
         const newFilteredPortfolio = portfolioDetails.filter((data) => data._id.includes(id))
         setFilteredPortfolio(newFilteredPortfolio);
-
     }
-
-    const handleClickForMoreBtn = (index) => {
-        setMoreBtnClick((prev) => {
-            const updatedArray = [...prev]; // Create a copy of the previous state array
-            updatedArray[index] = !prev[index]; // Toggle the value at the specified index
-            return updatedArray; // Return the updated array as the new state
-        });
-
-    };
 
     return (
         <>
-            {/* <!--==================== PORTFOLIO ====================--> */}
             <section className="portfolio section smooth_transition" id="portfolio">
                 <h2 className="section_title">Portfolio</h2>
                 <span className="section_subtitle">my personal projects</span>
@@ -76,75 +60,75 @@ const Portfolio = () => {
                             </button>
                         ))}
                     </div>
-                    
+
                     <div className='image_container'>
                         <AnimatePresence>
                             {filteredPortfolio.map((details) => (
-                                <motion.div className='image_card' key={details.id}
+                                <motion.div
+                                    className='image_card'
+                                    key={details.id}
                                     layout
-                                    initial={{ opacity: 0 }}
-                                    whileInView={{ opacity: 1 }}
-                                    exit={{ opacity: 0 }}
-                                    transition={{ duration: 0.5 }}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    exit={{ opacity: 0, scale: 0.9 }}
+                                    transition={{ duration: 0.4 }}
                                 >
-                                    <Card sx={{ width: 'inherit', height: 350, backgroundColor: 'var(--input-color)' }} >
-                                        <CardMedia
-                                            sx={{ height: 200 }}
-                                            image={details.img}
-                                            title="Projects"
-                                        />
-                                        {!moreBtnClick[details.id] ?
-                                            null
-                                            :
-                                            <span className='tech-stacks'>
-                                                <ol>
-                                                    {
-                                                        details['tech-stacks'].map((stack, index) =>
-                                                            (<li key={index}>{stack}</li>))
+                                    <Card sx={{ height: 350 }}>
+                                        <div style={{ position: 'relative', overflow: 'hidden' }}>
+                                            <CardMedia
+                                                sx={{ height: 200 }}
+                                                image={details.img}
+                                                title={details.title}
+                                            />
+                                            
+                                            {/* Tech stacks overlay - shows on hover */}
+                                            <div className='tech-stacks'>
+                                                <ul>
+                                                    {details['tech-stacks'].map((stack, index) => (
+                                                        <li key={index}>{stack}</li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        </div>
 
-                                                    }
-                                                </ol>
-                                            </span>}
-                                        <CardContent sx={{color: 'var(--title-color)'}}>
+                                        <CardContent>
                                             <Typography gutterBottom variant="h7" component="div">
                                                 {details.title}
                                             </Typography>
-                                            
-                                            {details.desc ? <Typography variant="body2" color="var(--title-color)">
-                                                {details.desc}
-                                            </Typography> : null}
-                                            
+                                            {details.desc && (
+                                                <Typography variant="body2">
+                                                    {details.desc}
+                                                </Typography>
+                                            )}
                                         </CardContent>
-                                        <CardActions className='clickables'>
-                                            <a href={details.githubURL} target="_blank" rel="noopener noreferrer" className="github-icon">
+
+                                        <CardActions>
+                                            <a
+                                                href={details.githubURL}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="github-icon"
+                                            >
                                                 <i className="uil uil-github-alt"></i>
                                             </a>
-                                            {details.liveLink !== "" ?
+                                            
+                                            {details.liveLink && (
                                                 <button className='live-btn'>
                                                     <a href={details.liveLink} target="_blank" rel="noreferrer">
-                                                        live
+                                                        Live Demo
                                                     </a>
                                                 </button>
-                                                :
-                                                null
-                                            }
-                                            <button className='more-btn' onClick={() => handleClickForMoreBtn(details.id)}>
-                                                {!moreBtnClick[details.id] ? <>more..</> : <>close</>}
-                                            </button>
+                                            )}
                                         </CardActions>
                                     </Card>
-
                                 </motion.div>
                             ))}
                         </AnimatePresence>
                     </div>
                 </div>
-
-
             </section>
         </>
     );
 }
-
 
 export default Portfolio;

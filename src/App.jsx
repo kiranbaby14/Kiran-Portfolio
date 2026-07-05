@@ -1,38 +1,52 @@
-import React, { createContext, useEffect, useState } from 'react';
+import React, { createContext, useEffect, useState } from "react";
 import {
-  Header, Home, About, Skills,
-  Qualification, Portfolio, Contact, Footer
-} from "./container/index"
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+  Header,
+  Home,
+  About,
+  Skills,
+  Qualification,
+  Portfolio,
+  Contact,
+  Footer,
+} from "./container/index";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import JavaScript from "./javaScript/script";
 import "./App.css";
 
 export const ThemeContext = createContext(null);
 
 const App = () => {
-
   useEffect(() => {
     JavaScript();
-    window.scrollTo({ top: 0, behavior: 'instant' });
-  }, [])
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, []);
 
-  const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light-theme");
-  const [themeIcon, setThemeIcon] = useState(localStorage.getItem("icon") ? localStorage.getItem("icon") : "uil uil-sun change-theme");
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme")
+      ? localStorage.getItem("theme")
+      : "light-theme",
+  );
+  const [themeIcon, setThemeIcon] = useState(
+    localStorage.getItem("icon")
+      ? localStorage.getItem("icon")
+      : "uil uil-sun change-theme",
+  );
 
   useEffect(() => {
     localStorage.setItem("theme", theme);
     localStorage.setItem("icon", themeIcon);
-  }, [theme, themeIcon])
-
-
+  }, [theme, themeIcon]);
 
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light-theme" ? "dark-theme" : "light-theme"));
 
-    setThemeIcon((curr) => (curr === "uil uil-sun change-theme" ?
-      "uil uil-moon change-theme" : "uil uil-sun change-theme"))
-  }
+    setThemeIcon((curr) =>
+      curr === "uil uil-sun change-theme"
+        ? "uil uil-moon change-theme"
+        : "uil uil-sun change-theme",
+    );
+  };
 
   return (
     <>
@@ -52,9 +66,9 @@ const App = () => {
           </a>
         </div>
       </ThemeContext.Provider>
-      <ToastContainer/>
+      <ToastContainer />
     </>
   );
-}
+};
 
 export default App;

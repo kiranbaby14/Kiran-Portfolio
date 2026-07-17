@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/Kiran-Portfolio/static/css/main.e6707fc9.css",
-    "main.js": "/Kiran-Portfolio/static/js/main.1dc84081.js",
+    "main.js": "/Kiran-Portfolio/static/js/main.9ea000b3.js",
     "static/media/itsuk_award.jpg": "/Kiran-Portfolio/static/media/itsuk_award.785786ab10b5b7c6ee90.jpg",
     "static/media/defaultImg.png": "/Kiran-Portfolio/static/media/defaultImg.fa7b3a72ed32b0e25bfb.png",
     "static/media/web_dev.jpg": "/Kiran-Portfolio/static/media/web_dev.3cd9be87b73d12843528.jpg",
     "static/media/game_dev.jpg": "/Kiran-Portfolio/static/media/game_dev.af355ef3a38cf63d633b.jpg",
+    "static/media/travelguide3d.jpg": "/Kiran-Portfolio/static/media/travelguide3d.4cb09dc0ba4a0c4c6221.jpg",
     "static/media/spheron.png": "/Kiran-Portfolio/static/media/spheron.24910297e8fdeb0da18d.png",
     "static/media/ml.jpg": "/Kiran-Portfolio/static/media/ml.16c4674271368b61523c.jpg",
     "static/media/bdrive.png": "/Kiran-Portfolio/static/media/bdrive.cfd67b7f9a27daae1f6a.png",
@@ -23,6 +24,7 @@
     "static/media/androidstudio.png": "/Kiran-Portfolio/static/media/androidstudio.5d54d88aa70bc57a8a94.png",
     "static/media/chai.png": "/Kiran-Portfolio/static/media/chai.8aee307f55a6284e5e02.png",
     "static/media/portfolio.png": "/Kiran-Portfolio/static/media/portfolio.12036e5042586f457b0c.png",
+    "static/media/docuwatch.jpg": "/Kiran-Portfolio/static/media/docuwatch.1707835a1f483d07f8d0.jpg",
     "static/media/Kiran_CV.pdf": "/Kiran-Portfolio/static/media/Kiran_CV.cc6b27a6d757d19f141d.pdf",
     "static/media/mapbox.png": "/Kiran-Portfolio/static/media/mapbox.68c504dff9ab442d9db1.png",
     "static/media/nextjs.png": "/Kiran-Portfolio/static/media/nextjs.c72482c59ce8f22648a4.png",
@@ -58,10 +60,10 @@
     "index.html": "/Kiran-Portfolio/index.html",
     "static/media/circle.svg": "/Kiran-Portfolio/static/media/circle.ae5f84b3853b9e34aa83cf8dada715c5.svg",
     "main.e6707fc9.css.map": "/Kiran-Portfolio/static/css/main.e6707fc9.css.map",
-    "main.1dc84081.js.map": "/Kiran-Portfolio/static/js/main.1dc84081.js.map"
+    "main.9ea000b3.js.map": "/Kiran-Portfolio/static/js/main.9ea000b3.js.map"
   },
   "entrypoints": [
     "static/css/main.e6707fc9.css",
-    "static/js/main.1dc84081.js"
+    "static/js/main.9ea000b3.js"
   ]
 }

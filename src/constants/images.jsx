@@ -58,6 +58,8 @@ import gamedeveloper from "../assets/images/game_dev.jpg";
 import minilondon3d from "../assets/images/minilondon3d.jpg";
 import searchlight from "../assets/images/searchlight.jpg";
 import talkmate from "../assets/images/talkmate.jpg";
+import docuwatch from "../assets/images/docuwatch.jpg";
+import travelguide3d from "../assets/images/travelguide3d.jpg";
 import spheron from "../assets/images/spheron.png";
 import ninjesk from "../assets/images/ninjesk.png";
 import hyperface from "../assets/images/hyperface.jpg";
@@ -126,6 +128,8 @@ const images = {
   minilondon3d,
   searchlight,
   talkmate,
+  docuwatch,
+  travelguide3d,
   spheron,
   ninjesk,
   hyperface,
